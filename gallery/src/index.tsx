@@ -1,13 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import displayArt from './components/displayArt';
-import header from './components/header';
+import Layout from './components/Layout';
 
 const grid = (
-  <div className = 'grid-container'>
-    <header /> 
-  </div>
+  <Layout/>
 )
 
 ReactDOM.render(

@@ -1,10 +1,11 @@
 import React from 'react'
 
-export default function displayArt(){
+export default function DisplayArt(){
     return (
-        <div className='displayArt'>
-            <svg className='SVG1' height='300px' width='300px'></svg>
-            <svg className='SVG1' height='300px' width='300px'></svg>
+        <div className='DisplayArt'>
+            <div className='SVG'>
+                <svg height='300px' width='300px'></svg>
+            </div>
         </div>
     )
 }
