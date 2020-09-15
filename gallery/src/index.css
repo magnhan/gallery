@@ -1,22 +1,22 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-row: repeate(5,1fr);
+  grid-row: repeate(5, 1fr);
   grid-gap: 10px;
-  background-color: #2196F3;
+  background-color: #2196f3;
   padding: 10px;
 }
 
@@ -39,10 +39,10 @@ code {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  
+
   align-items: center;
 }
-.Footer{
+.Footer {
   grid-column: 1/6;
 }
 
@@ -80,15 +80,13 @@ code {
   grid-row: 2;
 }
 
-
-@media only screen and (max-width: 650px)  {
-  .Menu{
+@media only screen and (max-width: 700px) {
+  .Menu {
     grid-column: 1/6;
     grid-row: 2 / 30;
   }
-  .DisplayArt{
+  .DisplayArt {
     grid-column: 1/6;
     grid-row: 30 / 100;
   }
 }
-  
