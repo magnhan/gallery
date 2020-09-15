@@ -28,4 +28,5 @@ export default function Layout() {
             <div className="Footer">Footer</div>
         </div>
     )
+    
 }

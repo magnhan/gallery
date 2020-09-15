@@ -79,3 +79,16 @@ code {
   grid-column: 3;
   grid-row: 2;
 }
+
+
+@media only screen and (max-width: 650px)  {
+  .Menu{
+    grid-column: 1/6;
+    grid-row: 2 / 30;
+  }
+  .DisplayArt{
+    grid-column: 1/6;
+    grid-row: 30 / 100;
+  }
+}
+  
