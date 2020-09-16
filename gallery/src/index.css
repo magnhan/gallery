@@ -15,9 +15,10 @@ code {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-row: repeate(5, 1fr);
-  grid-gap: 10px;
+  grid-gap: 5px;
   background-color: #2196f3;
-  padding: 10px;
+  padding: 5px;
+  min-height: 100vh; /*stretches to fill the screen*/
 }
 
 .grid-container > div {
@@ -25,6 +26,7 @@ code {
   text-align: center;
   padding: 20px;
   font-size: 30px;
+  justify-self: stretch;
 }
 .Header {
   grid-column: 1/6;
@@ -40,7 +42,6 @@ code {
   grid-gap: 10px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
-  align-items: center;
 }
 .Footer {
   grid-column: 1/6;
@@ -48,10 +49,9 @@ code {
 
 .SVG {
   background-color: #444;
-  border-radius: 20px;
   font-size: 150%;
   height: 300px;
-  width: 300px;
+  width: 280px;
   justify-self: center;
 }
 
@@ -80,6 +80,17 @@ code {
   grid-row: 2;
 }
 
+.SVG_picture {
+  height: 250px;
+  width: 280px;
+  background-color: green;
+}
+
+.text {
+  color: #fff;
+  font-size: x-small;
+}
+
 @media only screen and (max-width: 650px) {
   .Menu {
     grid-column: 1/6;
@@ -88,5 +99,27 @@ code {
   .DisplayArt {
     grid-column: 1/6;
     grid-row: 30 / 100;
+  }
+}
+
+/* On screens that are 350px or less */
+@media only screen and (max-width: 350px) {
+  .Menu {
+    grid-column: 1/6;
+    grid-row: 2 / 30;
+  }
+  .DisplayArt {
+    grid-column: 1/6;
+    grid-row: 30 / 100;
+
+  }
+  .SVG{
+    height: 200px;
+    width: 200px;
+    justify-self: stretch;
+  }
+  .SVG_picture{
+    height: 160px;
+    width: 200px;
   }
 }
