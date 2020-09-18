@@ -2,17 +2,20 @@ import React, { Component } from "react";
 import "./App.css";
 import "./index.css";
 import DisplayArt from "./components/DisplayArt";
+import Header from "./components/Header";
+import Menu from "./components/Menu";
+import Footer from "./components/Footer";
 
 class App extends Component {
   render() {
     return (
       <div className="grid-container">
-      <div className="Header">Header</div>
-      <div className="Menu">Menu</div>
-      <DisplayArt/>
-      <div className="Footer">Footer</div>
-    </div>
-    )
+        <Header />
+        <Menu />
+        <DisplayArt />
+        <Footer />
+      </div>
+    );
   }
 }
 
