@@ -17,10 +17,8 @@
   fill-rule: evenodd;
 }
 
-#svg1 > #svg1pic {
-  animation-duration: 1.5s;
-  animation-name: loop;
-  animation-iteration-count: infinite;
+#svg1 {
+  animation: loop 5s infinite;
 }
 
 @keyframes loop {
@@ -29,7 +27,8 @@
   }
 
   50% {
-    transform: translateY(-80px);
+    transform: translateY(-25px);
+    transform: translateX(-3px);
   }
   to {
     transform: translateY(0px);

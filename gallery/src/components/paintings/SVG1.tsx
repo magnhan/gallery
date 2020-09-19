@@ -16,7 +16,8 @@ export default function SVG1() {
         />
         <path
           className="trumpet"
-          transform="translate(0,0)"
+          id="svg1"
+          transform="translate(5,7)"
           d="M77.739,89.31l10.738-11.8a4.671,4.671,0,0,1,6.833,0c3.647,3.417-2.928,8.853-2.928,8.853L108,102.1l-5.857,5.9L86.524,92.261l-3.9,2.951s-3.681,3.028-5.857,0S77.739,89.31,77.739,89.31Z"
         />
         <path
