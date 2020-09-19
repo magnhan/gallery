@@ -40,6 +40,11 @@
   justify-self: center;
 }
 
+.trumpet{
+  fill: #e1ab36;
+  fill-rule: evenodd;
+}
+
 .SVG1 {
   grid-column: 1;
   grid-row: 1;
