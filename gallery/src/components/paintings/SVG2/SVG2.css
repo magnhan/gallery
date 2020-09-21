@@ -1,0 +1,5 @@
+#bass-base,
+#bass-stem,
+#bass-bow {
+  transform: scale(0.5);
+}

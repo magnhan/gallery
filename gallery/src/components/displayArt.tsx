@@ -1,10 +1,10 @@
 import React from "react";
-import SVG1 from "./paintings/SVG1";
-import SVG2 from "./paintings/SVG2";
-import SVG3 from "./paintings/SVG3";
-import SVG4 from "./paintings/SVG4";
-import SVG5 from "./paintings/SVG5";
-import SVG6 from "./paintings/SVG6";
+import SVG1 from "./paintings/SVG1/SVG1";
+import SVG2 from "./paintings/SVG2/SVG2";
+import SVG3 from "./paintings/SVG3/SVG3";
+import SVG4 from "./paintings/SVG4/SVG4";
+import SVG5 from "./paintings/SVG5/SVG5";
+import SVG6 from "./paintings/SVG6/SVG6";
 
 export default function DisplayArt() {
   return (
