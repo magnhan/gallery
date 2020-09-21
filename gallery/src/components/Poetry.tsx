@@ -16,29 +16,25 @@ class Poetry extends Component<{}, {poetryDB: Readonly<any>} > {
         .then(users => this.setState({poetryDB: users}));
     }
 
-    returnPoetry(){
-        {
+    generatePoetry(){
+      return(
+        <div>
+          {
             this.state.poetryDB.map((poem: { title: string | number | null | undefined; lines: React.ReactNode; }) => (
-              <p key={poem.title}>
-                {poem.title}
-                </p>
-             ))[Math.floor(Math.random() * (this.state.poetryDB.length - 1))]
-           }
-         
+            <p key={poem.title}>
+              {poem.title}
+            </p>
+            ))[Math.floor(Math.random() * (this.state.poetryDB.length - 1))]
+          }
+        </div>
+      )
     }
 
     render(){
         return(
-            
-            this.state.poetryDB.map((poem: { title: string | number | null | undefined; lines: React.ReactNode; }) => (
-                <p key={poem.title}>
-                  {poem.title}
-                  </p>
-               ))[Math.floor(Math.random() * (this.state.poetryDB.length - 1))]
-            
+          this.generatePoetry()
         )
     }
-    
-
 }
+
 export default Poetry; 
