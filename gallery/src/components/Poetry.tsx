@@ -25,10 +25,20 @@ class Poetry extends Component<{}, {poetryDB: Readonly<any>} > {
              ))[Math.floor(Math.random() * (this.state.poetryDB.length - 1))]
            }
          
+    }
 
-
+    render(){
+        return(
+            
+            this.state.poetryDB.map((poem: { title: string | number | null | undefined; lines: React.ReactNode; }) => (
+                <p key={poem.title}>
+                  {poem.title}
+                  </p>
+               ))[Math.floor(Math.random() * (this.state.poetryDB.length - 1))]
+            
+        )
     }
     
 
-
 }
+export default Poetry; 

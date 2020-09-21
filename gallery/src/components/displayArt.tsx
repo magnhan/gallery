@@ -1,12 +1,12 @@
 import React from "react";
+import Poetry from './Poetry'
 
 export default function DisplayArt() {
   return (
     <div className="DisplayArt">
       <div className="SVG 1">
         <svg className="SVG_picture"></svg>
-        <p className="text"> 
-        </p>
+        <Poetry/>
       </div>
 
       <div className="SVG 2">
