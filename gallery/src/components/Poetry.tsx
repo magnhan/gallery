@@ -24,11 +24,5 @@ class Poetry extends Component<{}, {poetryDB: Readonly<any>} > {
                 </p>
              ))[Math.floor(Math.random() * (this.state.poetryDB.length - 1))]
            }
-         
-
-
     }
-    
-
-
 }
