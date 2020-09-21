@@ -2,7 +2,7 @@ import React from "react";
 
 export default function SVG1() {
   return (
-    <div className="SVG 1">
+    <div className="SVG SVG1">
       <svg className="SVG_picture">
         <path
           id="valve-3"
