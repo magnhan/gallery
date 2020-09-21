@@ -5,7 +5,6 @@
   grid-gap: 5px;
   min-height: 100vh; /*stretches to fill the screen*/
   background-color: beige;
-  border-radius: 15px;
 }
 
 .grid-container > div {
@@ -63,4 +62,10 @@
     width: 200px;
     justify-items: center;
   }
+}
+
+.Header,
+.Menu,
+.Footer {
+  background-color: gray;
 }
