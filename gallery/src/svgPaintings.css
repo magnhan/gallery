@@ -17,21 +17,51 @@
   fill-rule: evenodd;
 }
 
-#svg1 {
-  animation: loop 5s infinite;
+#valve-1{
+  animation: valve-1 6s infinite;
 }
 
-@keyframes loop {
-  from {
-    transform: translateY(0px);
-  }
+#valve-2{
+  animation: valve-2 4s infinite;
+}
 
+#valve-3{
+  animation: valve-3 5s infinite;
+}
+
+@keyframes valve-1 {
+  from {
+    transform: rotate(-45deg) translate(-92px, 45px);
+  }
   50% {
-    transform: translateY(-25px);
-    transform: translateX(-3px);
+    transform: rotate(-45deg) translate(-92px, 28px);
   }
   to {
-    transform: translateY(0px);
+    transform: rotate(-45deg) translate(-92px, 45px);
+  }
+}
+
+@keyframes valve-2 {
+  from {
+    transform: rotate(-45deg) translate(-118px, 45px);
+  }
+  50% {
+    transform: rotate(-45deg) translate(-118px, 28px);
+  }
+  to {
+    transform: rotate(-45deg) translate(-118px, 45px);
+  }
+}
+
+@keyframes valve-3 {
+  from {
+    transform: rotate(-45deg) translate(-145px, 45px);
+  }
+  50% {
+    transform: rotate(-45deg) translate(-145px, 28px);
+  }
+  to {
+    transform: rotate(-45deg) translate(-145px, 45px);
   }
 }
 
@@ -66,3 +96,4 @@
   color: #fff;
   font-size: x-small;
 }
+
