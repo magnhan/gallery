@@ -37,3 +37,18 @@
   color: #fff;
   font-size: x-small;
 }
+
+/* On screens that are 350px or less */
+@media only screen and (max-width: 350px) {
+  .SVG {
+    height: 200px;
+    width: 200px;
+    justify-items: stretch;
+  }
+
+  .SVG_picture {
+    height: 160px;
+    width: 200px;
+    justify-items: center;
+  }
+}

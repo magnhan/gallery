@@ -52,16 +52,8 @@
     grid-column: 1/6;
     grid-row: 30 / 100;
   }
-  .SVG {
-    height: 200px;
-    width: 200px;
-    justify-items: stretch;
-  }
-  .SVG_picture {
-    height: 160px;
-    width: 200px;
-    justify-items: center;
-  }
+  
+
 }
 
 .Header,
