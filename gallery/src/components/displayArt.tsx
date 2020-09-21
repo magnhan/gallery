@@ -5,7 +5,8 @@ export default function DisplayArt() {
     <div className="DisplayArt">
       <div className="SVG 1">
         <svg className="SVG_picture"></svg>
-        <p className="text"> Bilde 1</p>
+        <p className="text"> 
+        </p>
       </div>
 
       <div className="SVG 2">
