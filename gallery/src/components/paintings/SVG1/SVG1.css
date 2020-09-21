@@ -11,14 +11,17 @@
 
 #valve-1 {
   animation: valve-1 6s infinite;
+  fill: rgba(248, 94, 66, 0.959);
 }
 
 #valve-2 {
   animation: valve-2 4s infinite;
+  fill: rgba(248, 94, 66, 0.959);
 }
 
 #valve-3 {
   animation: valve-3 5s infinite;
+  fill: rgba(248, 94, 66, 0.959);
 }
 
 @keyframes valve-1 {
