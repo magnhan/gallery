@@ -6,22 +6,23 @@
 
 #bass-base {
   fill: #7f4f00;
+  transform: scale(0.5);
 }
 
 #bass-bow {
   fill: #3d322d;
-  transform: rotate(-45deg) translate(0, 0);
-  /* animation: bow 5s infinite; */
+  animation: bow 3s infinite;
+  transform: scale(0.5);
 }
 
 @keyframes bow {
   from {
-    transform: rotate(-45deg) translate(0, 0);
+    transform: rotate(3deg) translate(-10px, 5px) scale(0.5);
   }
   50% {
-    transform: rotate(-45deg) translate(0, 0);
+    transform: rotate(-3deg) translate(40px, 5px) scale(0.5);
   }
   to {
-    transform: rotate(-45deg) translate(0, 0);
+    transform: rotate(3deg) translate(-10px, 5px) scale(0.5);
   }
 }
