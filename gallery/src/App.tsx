@@ -19,7 +19,7 @@ export default function App() {
       <Header />
       <Menu />
       <DisplayArt />
-      <Footer />
+      <Footer />|
     </div>
   );
 }
