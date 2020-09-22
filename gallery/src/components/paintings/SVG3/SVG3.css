@@ -1,0 +1,17 @@
+#stick-1, #stick2{
+    fill: #efb66a;
+}
+
+#drum-base{
+    fill: #f45151;
+}
+
+#drum-top-bottom{
+    fill: #e2e2e2;
+}
+
+#stick-1, #stick2, #drum-base, #drum-top-bottom{
+    fill-rule: evenodd;
+    transform: scale(0.3) translate(-60px, 60px);
+}
+

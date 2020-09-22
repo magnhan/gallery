@@ -1,9 +1,9 @@
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-row: repeate(5, 1fr);
-  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
+  grid-row: repeat(auto-fill, 1fr);
   min-height: 100vh; /*stretches to fill the screen*/
+  min-width: 100vw;
   background-color: beige;
 }
 
@@ -27,6 +27,11 @@
 
 .Footer > h1{
   color: aqua;
+}
+
+.DisplayArt {
+  grid-column: 1/6;
+  grid-row: 30 / 100;
 }
 
 @media only screen and (max-width: 650px) {
