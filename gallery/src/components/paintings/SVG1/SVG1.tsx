@@ -1,4 +1,6 @@
 import React from "react";
+import "./SVG1.css";
+import "./../svg.css";
 
 export default function SVG1() {
   return (
