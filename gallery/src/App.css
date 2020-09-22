@@ -20,21 +20,20 @@
   grid-column: 1/2;
   grid-row: 2 / 80;
 }
-.DisplayArt {
-  grid-column: 2/6;
-  grid-row: 2 / 80;
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
+
 .Footer {
   grid-column: 1/6;
+}
+
+.Footer > h1{
+  color: aqua;
 }
 
 @media only screen and (max-width: 650px) {
   .Menu {
     grid-column: 1/6;
     grid-row: 2 / 30;
+    
   }
   .DisplayArt {
     grid-column: 1/6;
@@ -52,8 +51,6 @@
     grid-column: 1/6;
     grid-row: 30 / 100;
   }
-  
-
 }
 
 .Header,

@@ -5,6 +5,7 @@ import SVG3 from "./paintings/SVG3/SVG3";
 import SVG4 from "./paintings/SVG4/SVG4";
 import SVG5 from "./paintings/SVG5/SVG5";
 import SVG6 from "./paintings/SVG6/SVG6";
+import "./display-art.css";
 
 export default function DisplayArt() {
   return (

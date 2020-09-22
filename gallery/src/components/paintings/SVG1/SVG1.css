@@ -1,9 +1,4 @@
 /* Trumpet */
-.SVG1 {
-  grid-column: 1;
-  grid-row: 1;
-}
-
 .trumpet {
   fill: #e1ab36;
   fill-rule: evenodd;
