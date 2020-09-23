@@ -1,41 +1,48 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import './sang.mp3';
+import React, { Component } from "react";
+import "./App.css";
+import "./index.css";
 
-function App() {
-  function sound(){
-    console.log('hei');
+class App extends Component {
+  
+  render() {
+
+    var isPlaying = false;
+    var audio_1 = new Audio();
+    var audio_2 = new Audio();
+    var audio_3 = new Audio();
+    audio_1.src = require("./AudioClips/sang.mp3");
+    audio_2.src = require("./AudioClips/sang.mp3");
+    audio_3.src = require("./AudioClips/sang.mp3");
+
+    function togglePlay(audio: HTMLAudioElement) {
+      isPlaying ? audio.pause() : audio.play();
+
+      audio.onplaying = function() {
+        isPlaying = true;
+      };
+      audio.onpause = function() {
+        isPlaying = false;
+      };
+    }
+
     return (
-      <audio controls>
-        <source src={require("./sang.mp3")} type="audio/mpeg"/>
-      </audio>
+        <div className="App">
+          <button onClick={(e) => { togglePlay(audio_1) }}>Play music1</button>
+          <button onClick={(e) => { togglePlay(audio_2) }}>Play music2</button>
+          <button onClick={(e) => { togglePlay(audio_3) }}>Play music3</button>
+          <div className="grid-container">
+            <div className="Header">Header</div>
+            <div className="Menu">Menu</div>
+            <div className="DisplayArt">DisplayArt</div>
+            <div className="Footer">Footer</div>
+          </div>
+        </div>
     )
-    
   }
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo"/>
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <audio controls>
-          <source src={require("./sang.mp3")} type="audio/mpeg"/>
-        </audio>
-        <button onClick={sound}> click me</button>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
 }
 
 export default App;
 
+/* <audio id="audioMusic">
+<source src={require("./sang.mp3")} type="audio/mpeg"/>
+</audio> */
