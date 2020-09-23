@@ -11,27 +11,27 @@ export default function DisplayArt() {
 
       <div className="SVG 2">
         <svg className="SVG_picture"></svg>
-        <p className="text"> Bilde 2</p>
+        <Poetry/>
       </div>
 
       <div className="SVG 3">
         <svg className="SVG_picture"></svg>
-        <p className="text"> Bilde 3</p>
+        <Poetry/>
       </div>
 
       <div className="SVG 4">
         <svg className="SVG_picture"></svg>
-        <p className="text"> Bilde 4</p>
+        <Poetry/>
       </div>
 
       <div className="SVG 5">
         <svg className="SVG_picture"></svg>
-        <p className="text"> Bilde 5</p>
+        <Poetry/>
       </div>
 
       <div className="SVG 6">
         <svg className="SVG_picture"></svg>
-        <p className="text"> Bilde 6</p>
+        <Poetry/>
       </div>
     </div>
   );

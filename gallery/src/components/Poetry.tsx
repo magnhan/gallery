@@ -21,7 +21,7 @@ class Poetry extends Component<{}, {poetryDB: Readonly<any>} > {
         <div>
           {
             this.state.poetryDB.map((poem: { title: string | number | null | undefined; lines: React.ReactNode; }) => (
-            <p key={poem.title}>
+            <p key={poem.title} style={{color:"white", fontSize:"x-small"}}>
               {poem.title}
             </p>
             ))[Math.floor(Math.random() * (this.state.poetryDB.length - 1))]
