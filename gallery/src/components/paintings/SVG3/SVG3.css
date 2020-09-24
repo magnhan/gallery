@@ -11,17 +11,19 @@
   fill: #e2e2e2;
 }
 
-#stick-1,
-#stick-2,
 #drum-base,
 #drum-top-bottom {
   fill-rule: evenodd;
-  transform: scale(0.3) translate(-60px, 60px);
+  transform: scale(0.3) translate(-70px, 60px);
 }
 
-#stick-1,
 #stick-2 {
-  animation: bang 2s infinite;
+  fill-rule: evenodd;
+  animation: bangbang 3s infinite;
+}
+
+#stick-1 {
+  animation: bang 3s infinite;
 }
 
 @keyframes bang {
@@ -33,5 +35,17 @@
   }
   to {
     transform: rotate(3deg) translate(-40px, 5px) scale(0.3);
+  }
+}
+
+@keyframes bangbang {
+  from {
+    transform: rotate(3deg) scale(0.3) translate(-250px, -20px);
+  }
+  50% {
+    transform: rotate(-7deg) scale(0.3) translate(-280px, -20px);
+  }
+  100% {
+    transform: rotate(3deg) scale(0.3) translate(-250px, -20px);
   }
 }
