@@ -1,0 +1,25 @@
+#microphone {
+  transform: scale(0.6) translateY(20px);
+  fill-rule: evenodd;
+}
+
+#fourthnote {
+  transform: scale(0.6) translate(120px, -100px);
+}
+
+#eightnote {
+  transform: scale(0.6) translate(140px, -80px);
+}
+
+#fourthnote {
+  animation: notes 3s infinite;
+}
+
+@keyframes notes {
+  from {
+    transform: scale(0.6) translate(120px, -100px);
+  }
+  100% {
+    transform: scale(0.6) translate(120px, -200px);
+  }
+}
