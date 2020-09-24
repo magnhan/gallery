@@ -1,11 +1,15 @@
 import React from "react";
 import "./SVG1.css";
 import "./../svg.css";
+import {togglePlay} from "../../Music";
+
+let audio = new Audio();
+audio.src = require("../../../AudioClips/trumpet.mp3");
 
 export default function SVG1() {
   return (
     <div className="SVG SVG1">
-      <svg className="SVG_picture">
+      <svg className="SVG_picture" onClick={(e) => { togglePlay(audio)}}>
         <path
           id="valve-3"
           className="trumpet"
