@@ -5,14 +5,13 @@ import "./index.css";
 class App extends Component {
   
   render() {
-
     var isPlaying = false;
     var audio_1 = new Audio();
     var audio_2 = new Audio();
     var audio_3 = new Audio();
-    audio_1.src = require("./AudioClips/sang.mp3");
-    audio_2.src = require("./AudioClips/sang.mp3");
-    audio_3.src = require("./AudioClips/sang.mp3");
+    audio_1.src = require("./AudioClips/trumpet.mp3");
+    audio_2.src = require("./AudioClips/guitar.mp3");
+    audio_3.src = require("./AudioClips/mikrofon.mp3");
 
     function togglePlay(audio: HTMLAudioElement) {
       isPlaying ? audio.pause() : audio.play();
