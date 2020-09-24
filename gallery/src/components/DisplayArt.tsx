@@ -11,7 +11,8 @@ class DisplayArt extends Component<{}, {poetryDB: Readonly<any>} > {
     constructor(props: any){
       super(props);
       console.log(this.props);
-  
+      //this.poems = [];
+      
       this.state = {
         poetryDB: []
       };
@@ -22,54 +23,27 @@ class DisplayArt extends Component<{}, {poetryDB: Readonly<any>} > {
       fetch('https://poetrydb.org/author,title/Shakespeare;Sonnet')
         .then(response => response.json())
         .then(users => this.setState({poetryDB: users}));
+      this.generatePoetry();
     }
 
     //Generates one random poetry title
     generatePoetry(){
+      let poems = this.state.poetryDB.map((poem: { title: string | number | null | undefined; lines: React.ReactNode; }) => (
+        poem.title))
       return(
-        <div>
-          {
-            this.state.poetryDB.map((poem: { title: string | number | null | undefined; lines: React.ReactNode; }) => (
-            <p key={poem.title} style={{color:"white", fontSize:"x-small"}}>
-              {poem.title}
-            </p>
-            ))[Math.floor(Math.random() * (this.state.poetryDB.length - 1))] 
-          }
-        </div>
-      )
+        poems[Math.floor(Math.random() * (this.state.poetryDB.length - 1))]
+        )
     }
-  render(){
+    
+    render(){
         return(
         <div className="DisplayArt">
-          <div className="SVG 1">
-            <svg className="SVG_picture"></svg>
-            {this.generatePoetry()}
-          </div>
-
-          <div className="SVG 2">
-            <svg className="SVG_picture"></svg>
-            {this.generatePoetry()}
-          </div>
-
-          <div className="SVG 3">
-            <svg className="SVG_picture"></svg>
-            {this.generatePoetry()}
-          </div>
-
-          <div className="SVG 4">
-            <svg className="SVG_picture"></svg>
-            {this.generatePoetry()}
-          </div>
-
-          <div className="SVG 5">
-            <svg className="SVG_picture"></svg>
-            {this.generatePoetry()}
-          </div>
-
-          <div className="SVG 6">
-            <svg className="SVG_picture"></svg>
-            {this.generatePoetry()}
-          </div>
+          <SVG1 poem={this.generatePoetry()}/>
+          <SVG2 poem={this.generatePoetry()}/>
+          <SVG3 poem={this.generatePoetry()}/>
+          <SVG4 poem={this.generatePoetry()}/>
+          <SVG5 poem={this.generatePoetry()}/>
+          <SVG6 poem={this.generatePoetry()}/>
         </div>
         )
     }

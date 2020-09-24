@@ -2,7 +2,7 @@ import React from "react";
 import "./SVG2.css";
 import "./../svg.css";
 
-export default function SVG2() {
+export default function SVG2(props: any) {
   return (
     <div className="SVG SVG2">
       <svg className="SVG_picture" id="base_paths">
@@ -19,7 +19,7 @@ export default function SVG2() {
           d="M129,293s185.074,0.036,215.22,0S384,306,384,306l-234.6,1-1.02-4h224.4s-11.176-6.786-31.62-7S129,296,129,296v-3Z"
         />
       </svg>
-      <p className="text"> Bilde 2</p>
+      <p className="text">{props.poem}</p>
     </div>
   );
 }
