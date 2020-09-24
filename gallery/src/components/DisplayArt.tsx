@@ -11,7 +11,6 @@ class DisplayArt extends Component<{}, {poetryDB: Readonly<any>} > {
     constructor(props: any){
       super(props);
       console.log(this.props);
-      //this.poems = [];
       
       this.state = {
         poetryDB: []
@@ -22,18 +21,20 @@ class DisplayArt extends Component<{}, {poetryDB: Readonly<any>} > {
     componentDidMount() {
       fetch('https://poetrydb.org/author,title/Shakespeare;Sonnet')
         .then(response => response.json())
-        .then(users => this.setState({poetryDB: users}));
-      this.generatePoetry();
+        .then(poems => this.setState({poetryDB: poems}));
     }
 
     //Generates one random poetry title
     generatePoetry(){
       let poems = this.state.poetryDB.map((poem: { title: string | number | null | undefined; lines: React.ReactNode; }) => (
         poem.title))
+      let random_index = Math.floor(Math.random() * (this.state.poetryDB.length - 1))
+
       return(
-        poems[Math.floor(Math.random() * (this.state.poetryDB.length - 1))]
+        poems[random_index]
         )
     }
+    
     
     render(){
         return(
