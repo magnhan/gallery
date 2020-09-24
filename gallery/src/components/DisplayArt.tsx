@@ -1,5 +1,4 @@
-<<<<<<< gallery/src/components/DisplayArt.tsx
-import React from "react";
+import React, {Component} from "react";
 import SVG1 from "./paintings/SVG1/SVG1";
 import SVG2 from "./paintings/SVG2/SVG2";
 import SVG3 from "./paintings/SVG3/SVG3";
@@ -76,9 +75,4 @@ class DisplayArt extends Component<{}, {poetryDB: Readonly<any>} > {
     }
 }
 
-
-
-    
-
 export default DisplayArt; 
->>>>>>> gallery/src/components/DisplayArt.tsx
