@@ -1,4 +1,12 @@
-import React, { Component } from "react";
+<<<<<<< gallery/src/components/DisplayArt.tsx
+import React from "react";
+import SVG1 from "./paintings/SVG1/SVG1";
+import SVG2 from "./paintings/SVG2/SVG2";
+import SVG3 from "./paintings/SVG3/SVG3";
+import SVG4 from "./paintings/SVG4/SVG4";
+import SVG5 from "./paintings/SVG5/SVG5";
+import SVG6 from "./paintings/SVG6/SVG6";
+import "./display-art.css";
 
 class DisplayArt extends Component<{}, {poetryDB: Readonly<any>} > {
     constructor(props: any){
@@ -31,8 +39,7 @@ class DisplayArt extends Component<{}, {poetryDB: Readonly<any>} > {
         </div>
       )
     }
-
-    render(){
+  render(){
         return(
         <div className="DisplayArt">
           <div className="SVG 1">
@@ -69,4 +76,9 @@ class DisplayArt extends Component<{}, {poetryDB: Readonly<any>} > {
     }
 }
 
+
+
+    
+
 export default DisplayArt; 
+>>>>>>> gallery/src/components/DisplayArt.tsx

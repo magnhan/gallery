@@ -1,0 +1,59 @@
+/* Trumpet */
+.trumpet {
+  fill: #e1ab36;
+  fill-rule: evenodd;
+}
+
+#valve-1 {
+  animation: valve-1 6s infinite;
+  fill: rgba(248, 94, 66, 0.959);
+}
+
+#valve-2 {
+  animation: valve-2 4s infinite;
+  fill: rgba(248, 94, 66, 0.959);
+}
+
+#valve-3 {
+  animation: valve-3 5s infinite;
+  fill: rgba(248, 94, 66, 0.959);
+}
+
+@keyframes valve-1 {
+  from {
+    transform: rotate(-45deg) translate(-92px, 45px);
+  }
+  50% {
+    transform: rotate(-45deg) translate(-92px, 28px);
+  }
+  to {
+    transform: rotate(-45deg) translate(-92px, 45px);
+  }
+}
+
+@keyframes valve-2 {
+  from {
+    transform: rotate(-45deg) translate(-118px, 45px);
+  }
+  50% {
+    transform: rotate(-45deg) translate(-118px, 28px);
+  }
+  to {
+    transform: rotate(-45deg) translate(-118px, 45px);
+  }
+}
+
+@keyframes valve-3 {
+  from {
+    transform: rotate(-45deg) translate(-145px, 45px);
+  }
+  50% {
+    transform: rotate(-45deg) translate(-145px, 28px);
+  }
+  to {
+    transform: rotate(-45deg) translate(-145px, 45px);
+  }
+}
+
+
+
