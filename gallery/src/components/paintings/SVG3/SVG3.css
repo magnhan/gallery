@@ -19,11 +19,11 @@
 
 #stick-2 {
   fill-rule: evenodd;
-  animation: bangbang 3s infinite;
+  animation: bangbang 1s infinite;
 }
 
 #stick-1 {
-  animation: bang 3s infinite;
+  animation: bang 1s infinite;
 }
 
 @keyframes bang {
