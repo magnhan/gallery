@@ -1,25 +1,30 @@
 #microphone {
-  transform: scale(0.6) translateY(20px);
+  transform: scale(0.6) translate(-60px, 60px);
   fill-rule: evenodd;
 }
 
-#fourthnote {
-  transform: scale(0.6) translate(120px, -100px);
-}
-
 #eightnote {
-  transform: scale(0.6) translate(140px, -80px);
+  animation: eigth_animated 2.5s infinite;
 }
 
 #fourthnote {
-  animation: notes 3s infinite;
+  animation: fourth_animated 1.5s infinite;
 }
 
-@keyframes notes {
+@keyframes fourth_animated {
   from {
-    transform: scale(0.6) translate(120px, -100px);
+    transform: rotate(45deg) scale(0.6) translate(60px, -270px);
   }
   100% {
-    transform: scale(0.6) translate(120px, -200px);
+    transform: rotate(45deg) scale(0.6) translate(60px, -480px);
+  }
+}
+
+@keyframes eigth_animated {
+  from {
+    transform: rotate(45deg) scale(0.6) translate(80px, -250px);
+  }
+  100% {
+    transform: rotate(45deg) scale(0.6) translate(80px, -470px);
   }
 }
