@@ -7,11 +7,6 @@ export default function Menu() {
     <div className="Menu">
       <ul className="Header_Menu">
         <li>
-          <NavLink to="/">
-            <button className="btn">Gallery</button>
-          </NavLink>
-        </li>
-        <li>
           <NavLink to="/Theme1">
             <button className="btn">Tropical</button>
           </NavLink>
