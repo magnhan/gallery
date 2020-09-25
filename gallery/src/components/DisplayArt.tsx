@@ -7,13 +7,14 @@ import SVG5 from "./paintings/SVG5/SVG5";
 import SVG6 from "./paintings/SVG6/SVG6";
 import "./display-art.css";
 
-class DisplayArt extends Component<{}, {poetryDB: Readonly<any>} > {
+class DisplayArt extends Component<{}, {poetryDB: Readonly<any>, poems: Map<string | number | null, React.ReactNode>} > {
     constructor(props: any){
       super(props);
       console.log(this.props);
       
       this.state = {
-        poetryDB: []
+        poetryDB: [],
+        poems: new Map()
       };
     }
     
@@ -21,20 +22,17 @@ class DisplayArt extends Component<{}, {poetryDB: Readonly<any>} > {
     componentDidMount() {
       fetch('https://poetrydb.org/author,title/Shakespeare;Sonnet')
         .then(response => response.json())
-        .then(poems => this.setState({poetryDB: poems}));
+        .then(users => this.setState({poetryDB: users}));
+      poems = this.state.poetryDB.map((poem: { title: string | number | null | undefined; lines: React.ReactNode; }) => (
+        poem.title))
     }
 
     //Generates one random poetry title
     generatePoetry(){
-      let poems = this.state.poetryDB.map((poem: { title: string | number | null | undefined; lines: React.ReactNode; }) => (
-        poem.title))
-      let random_index = Math.floor(Math.random() * (this.state.poetryDB.length - 1))
-
       return(
-        poems[random_index]
+        poems[Math.floor(Math.random() * (this.state.poetryDB.length - 1))]
         )
     }
-    
     
     render(){
         return(
