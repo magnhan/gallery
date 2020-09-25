@@ -11,19 +11,19 @@ export default function Menu() {
             <button className="btn">Gallery</button>
           </NavLink>
         </li>
-        <li id ='Tropical'>
+        <li >
           <NavLink to="/Theme1">
-            <button className="btn">Tropical</button>
+            <button id ='Tropical' className="btn">Tropical</button>
           </NavLink>
         </li>
-        <li id ='Disco'>
+        <li >
           <NavLink to="/Theme2">
-            <button className="btn">Disco</button>
+            <button id ='Disco' className="btn">Disco</button>
           </NavLink>
         </li>
-        <li id ='Royal'>
+        <li >
           <NavLink to="/Theme3">
-            <button className="btn">Royal</button>
+            <button id ='Royal' className="btn">Royal</button>
           </NavLink>
         </li>
         <li>
