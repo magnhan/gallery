@@ -1,12 +1,18 @@
+.Menu {
+  background-color: darkcyan;
+}
+
+.Header_Menu {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  padding-inline-start: 2em;
+}
+
 .Header_Menu > li {
   display: inline;
   list-style-type: none;
   margin: 1em;
   font-size: smaller;
-}
-
-.Menu {
-  background-color: darkcyan;
 }
 
 .Header_Menu li a {
