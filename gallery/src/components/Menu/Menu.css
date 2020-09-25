@@ -22,3 +22,29 @@
   margin: 1em;
   display: inline-block;
 }
+
+@font-face {
+  font-family: 'tropical' ;
+  src: url('../../fonts/Tropical.ttf');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'disco' ;
+  src: url('../../fonts/DiscoDiva.ttf');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'royal' ;
+  src: url('../../fonts/RoyalQueen.ttf');
+  font-style: normal;
+}
+
+#Tropical {
+  font-family: 'tropical', "Roboto";
+}
+#Disco {
+  font-family: 'disco', "Roboto";
+}
+#Royal {
+  font-family: 'royal', "Roboto";
+}
