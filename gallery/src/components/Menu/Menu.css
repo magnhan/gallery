@@ -1,5 +1,5 @@
 .Menu {
-  background-color: #D64550;
+  background-color: #d64550;
 }
 
 .Header_Menu {
@@ -19,6 +19,10 @@
   color: #fff;
   font-weight: bold;
   text-decoration: none;
-  margin: 1em;
   display: inline-block;
+}
+
+.Header_Menu li a:hover {
+  color: #d64550;
+  background-color: #fff;
 }
