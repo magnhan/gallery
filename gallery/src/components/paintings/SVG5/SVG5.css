@@ -1,0 +1,22 @@
+#trombone,
+#tutut {
+  transform: rotate(-25deg) scale(0.25) translate(-180px, 400px);
+  fill: #deb700;
+  fill-rule: evenodd;
+}
+
+#tutut {
+  animation: tutut 3s infinite;
+}
+
+@keyframes tutut {
+  from {
+    transform: rotate(-25deg) scale(0.25) translate(-180px, 400px);
+  }
+  50% {
+    transform: rotate(-25deg) scale(0.25) translate(-250px, 430px);
+  }
+  100% {
+    transform: rotate(-25deg) scale(0.25) translate(-180px, 400px);
+  }
+}

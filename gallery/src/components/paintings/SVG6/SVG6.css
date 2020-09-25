@@ -1,0 +1,38 @@
+#marakas_left,
+#marakas_right {
+  fill: #1d1d1d;
+  fill-rule: evenodd;
+}
+
+#marakas_left {
+  animation: marakas_animation_left 0.7s infinite;
+}
+
+#marakas_right {
+  transform: scale(0.3) translateY(250px) translateX(400px);
+  animation: marakas_animation_right 0.8s infinite;
+}
+
+@keyframes marakas_animation_left {
+  from {
+    transform: rotate(-55deg) scale(0.3) translateY(250px) translateX(-370px);
+  }
+  50% {
+    transform: rotate(-35deg) scale(0.3) translateY(270px) translateX(-270px);
+  }
+  100% {
+    transform: rotate(-55deg) scale(0.3) translateY(250px) translateX(-370px);
+  }
+}
+
+@keyframes marakas_animation_right {
+  from {
+    transform: scale(0.3) translateY(250px) translateX(400px);
+  }
+  50% {
+    transform: rotate(15deg) scale(0.3) translateY(120px) translateX(420px);
+  }
+  100% {
+    transform: scale(0.3) translateY(250px) translateX(400px);
+  }
+}
