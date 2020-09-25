@@ -1,11 +1,15 @@
 import React from "react";
 import "./SVG3.css";
 import "./../svg.css";
+import {togglePlay} from "../../Music";
+
+let audio = new Audio();
+audio.src = require("../../../AudioClips/drums.mp3");
 
 export default function SVG3(props: any) {
   return (
     <div className="SVG SVG3">
-      <svg className="SVG_picture">
+      <svg className="SVG_picture" onClick={(e) => { togglePlay(audio)}}>
         <path 
           id="drum-base"
           d="M223.069,284L222,451.935S239.348,499.043,459.4,499,700,448.726,700,448.726V286.139s-44.27,48.981-240.6,48.135S223.069,284,223.069,284Z"
