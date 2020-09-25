@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import "./Menu.css";
 
 export default function Menu() {
   return (
@@ -16,6 +17,9 @@ export default function Menu() {
         </li>
         <li>
           <NavLink to="/Theme3">Theme3</NavLink>
+        </li>
+        <li>
+          <NavLink to="/Favorites">Favorites</NavLink>
         </li>
       </ul>
     </div>
