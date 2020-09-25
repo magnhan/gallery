@@ -22,9 +22,35 @@
   display: inline-block;
 }
 
-.btn {
-  color: #eef4d4;
-  background-color: #d64550;
+@font-face {
+  font-family: 'tropical' ;
+  src: url('../../fonts/Tropical.ttf');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'disco' ;
+  src: url('../../fonts/DiscoDiva.ttf');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'royal' ;
+  src: url('../../fonts/RoyalQueen.ttf');
+  font-style: normal;
+}
+
+#Tropical {
+  font-family: 'tropical', "Roboto";
+}
+#Disco {
+  font-family: 'disco', "Roboto";
+}
+#Royal {
+  font-family: 'royal', "Roboto";
+}
+
+.btn{
+  color: #EEF4D4;
+  background-color: #D64550;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
