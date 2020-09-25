@@ -16,7 +16,7 @@
 }
 
 .Header_Menu li a {
-  color: #EEF4D4;
+  color: #eef4d4;
   font-weight: bold;
   text-decoration: none;
   display: inline-block;
@@ -46,8 +46,8 @@
 }
 #Royal {
   font-family: 'royal', "Roboto";
-
 }
+
 .btn{
   color: #EEF4D4;
   background-color: #D64550;
@@ -61,7 +61,7 @@
   border: none;
 }
 
-.btn:hover{
-  background-color: #EEF4D4;
-  color: #D64550;
+.btn:hover {
+  background-color: #eef4d4;
+  color: #d64550;
 }
