@@ -9,8 +9,8 @@
 }
 
 .SVG_picture {
-  height: 8em;
-  width: 8em;
+  /* height: 8em;
+  width: 8em; */
   background-color: white;
 }
 
@@ -28,12 +28,10 @@
     .SVG {
       height: 7em;
       width: 5.6em;
-      justify-items: stretch;
     }
   
-    .SVG_picture {
+    /* .SVG_picture {
       height: 5.6em;
       width: 5.6em;
-      justify-items: center;
-    }
+    } */
   }

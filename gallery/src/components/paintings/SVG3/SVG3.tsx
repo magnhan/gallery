@@ -5,7 +5,7 @@ import "./../svg.css";
 export default function SVG3() {
   return (
     <div className="SVG SVG3">
-      <svg className="SVG_picture">
+      <svg className="SVG_picture" viewBox=" -40 -40 300 310">
         <path 
           id="drum-base"
           d="M223.069,284L222,451.935S239.348,499.043,459.4,499,700,448.726,700,448.726V286.139s-44.27,48.981-240.6,48.135S223.069,284,223.069,284Z"
