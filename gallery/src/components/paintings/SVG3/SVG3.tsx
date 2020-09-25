@@ -2,7 +2,7 @@ import React from "react";
 import "./SVG3.css";
 import "./../svg.css";
 
-export default function SVG3() {
+export default function SVG3(props: any) {
   return (
     <div className="SVG SVG3">
       <svg className="SVG_picture">
@@ -23,7 +23,7 @@ export default function SVG3() {
           d="M276.729,305.247s-6.964,10.75,27.526,10.994,216.752-4.4,216.752-4.4,23.94,20.839,44.546-4.49c0.959-12.134-21.282-28.028-45.759-7.851-27.139-1.7-217.371-6.494-228.4-4.344S278.172,299.854,276.729,305.247Z"
         />
       </svg>
-      <p className="text"> Bilde 3</p>
+      <p className="text">{props.poem}</p>
     </div>
   );
 }

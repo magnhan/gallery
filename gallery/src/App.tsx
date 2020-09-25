@@ -1,9 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 import "./App.css";
 import "./index.css";
-import DisplayArt from "./components/DisplayArt";
 import Header from "./components/Header";
 import Menu from "./components/Menu";
+import DisplayArt from "./components/DisplayArt";
 import Footer from "./components/Footer";
 
 export default function App() {
@@ -12,7 +12,7 @@ export default function App() {
       <Header />
       <Menu />
       <DisplayArt />
-      <Footer />|
+      <Footer />
     </div>
   );
 }

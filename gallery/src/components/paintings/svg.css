@@ -14,6 +14,10 @@
   background-color: white;
 }
 
+.text{
+  font-size: x-large;
+}
+
 /* On screens that are 350px or less */
 @media only screen and (max-width: 350px) {
     .SVG {
