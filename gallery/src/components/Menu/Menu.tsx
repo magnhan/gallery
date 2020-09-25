@@ -8,22 +8,23 @@ export default function Menu() {
       <ul className="Header_Menu">
         <li>
           <NavLink to="/Theme1">
-            <button id ='Tropical' className="btn">Tropical</button>
-          </NavLink>
-        </li>
-        <li >
-          <NavLink to="/Theme2">
-            <button id ='Disco' className="btn">Disco</button>
-          </NavLink>
-        </li>
-        <li >
-          <NavLink to="/Theme3">
-            <button id ='Royal' className="btn">Royal</button>
+            <button id="Tropical" className="btn">
+              Tropical
+            </button>
           </NavLink>
         </li>
         <li>
-          <NavLink to="/Favorites">
-            <button className="btn">Favorites</button>
+          <NavLink to="/Theme2">
+            <button id="Disco" className="btn">
+              Disco
+            </button>
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/Theme3">
+            <button id="Royal" className="btn">
+              Royal
+            </button>
           </NavLink>
         </li>
       </ul>

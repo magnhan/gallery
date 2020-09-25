@@ -9,12 +9,14 @@ import Footer from "./components/Footer";
 import Theme1 from "./components/Theme1";
 import Theme2 from "./components/Theme2";
 import Theme3 from "./components/Theme3";
-import Favorites from "./components/Favorites";
+import Favorites from "./components/Favorites/Favorites";
+import FavoritesButton from "./components/Favorites/FavoritesButton";
 
 export default function App() {
   return (
     <HashRouter>
       <div className="grid-container">
+        <FavoritesButton />
         <Header />
         <Menu />
         <div className="contentDiplayed">
