@@ -5,7 +5,7 @@ import "./../svg.css";
 export default function SVG1() {
   return (
     <div className="SVG SVG1">
-      <svg className="SVG_picture">
+      <svg className="SVG_picture" viewBox=" -40 -40 300 310">
         <path
           id="valve-3"
           className="trumpet"

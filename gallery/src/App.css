@@ -8,16 +8,13 @@
 }
 .grid-container > div {
   text-align: center;
-  padding: 20px;
   font-size: 30px;
-  justify-self: stretch;
 }
 .Header {
   border-bottom: solid grey;
 }
 .Menu {
   border-bottom: solid grey;
-  ;
 }
 
 .DisplayArt {
@@ -29,7 +26,6 @@
 
 /* On screens that are 350px or less */
 @media only screen and (max-width: 350px) {
-  
 
 }
 
