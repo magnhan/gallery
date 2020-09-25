@@ -1,12 +1,11 @@
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
-  grid-row: repeat(auto-fill, 1fr);
+  grid-template-columns: 1fr;
+  grid-row: 1fr;
   min-height: 100vh; /*stretches to fill the screen*/
   min-width: 100vw;
   background-color: beige;
 }
-
 .grid-container > div {
   text-align: center;
   padding: 20px;
@@ -14,52 +13,24 @@
   justify-self: stretch;
 }
 .Header {
-  grid-column: 1/6;
+  border-bottom: solid grey;
 }
 .Menu {
-  grid-column: 1/2;
-  grid-row: 2 / 80;
-}
-
-.Footer {
-  grid-column: 1/6;
-}
-
-.Footer > h1{
-  color: aqua;
+  border-bottom: solid grey;
+  ;
 }
 
 .DisplayArt {
-  grid-column: 1/6;
-  grid-row: 30 / 100;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-@media only screen and (max-width: 650px) {
-  .Menu {
-    grid-column: 1/6;
-    grid-row: 2 / 30;
-    
-  }
-  .DisplayArt {
-    grid-column: 1/6;
-    grid-row: 30 / 100;
-  }
-}
 
 /* On screens that are 350px or less */
 @media only screen and (max-width: 350px) {
-  .Menu {
-    grid-column: 1/6;
-    grid-row: 2 / 30;
-  }
-  .DisplayArt {
-    grid-column: 1/6;
-    grid-row: 30 / 100;
-  }
+  
+
 }
 
-.Header,
-.Menu,
-.Footer {
-  background-color: gray;
-}
+
