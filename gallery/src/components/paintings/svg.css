@@ -1,11 +1,11 @@
 .SVG {
-    background-color: lightgrey;
-    height: 10em;
-    width: 8em;
-    padding: 0.1em;
-    margin: 1.1em;
-    justify-self: center;
-    border-radius: 2%;
+  background-color: lightgrey;
+  height: 10em;
+  width: 8em;
+  padding: 0.1em;
+  margin: 1.1em;
+  justify-self: center;
+  border-radius: 2%;
 }
 
 .SVG_picture {
@@ -14,7 +14,7 @@
   background-color: white;
 }
 
-.text{
+.text {
   font-size: small;
   text-align: left;
   margin-block-start: 0.5em;
@@ -25,13 +25,8 @@
 
 /* On screens that are 350px or less */
 @media only screen and (max-width: 350px) {
-    .SVG {
-      height: 7em;
-      width: 5.6em;
-    }
-  
-    /* .SVG_picture {
-      height: 5.6em;
-      width: 5.6em;
-    } */
+  .SVG {
+    height: 7em;
+    width: 5.6em;
   }
+}

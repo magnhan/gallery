@@ -23,10 +23,8 @@
   justify-content: space-around;
 }
 
-
-/* On screens that are 350px or less */
 @media only screen and (max-width: 350px) {
-
+  .Header {
+    font-size: 15px;
+  }
 }
-
-

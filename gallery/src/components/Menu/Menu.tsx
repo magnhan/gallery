@@ -10,13 +10,13 @@ export default function Menu() {
           <NavLink to="/">Gallery</NavLink>
         </li>
         <li>
-          <NavLink to="/Theme1">Theme1</NavLink>
+          <NavLink to="/Theme1">Tropical</NavLink>
         </li>
         <li>
-          <NavLink to="/Theme2">Theme2</NavLink>
+          <NavLink to="/Theme2">Disco</NavLink>
         </li>
         <li>
-          <NavLink to="/Theme3">Theme3</NavLink>
+          <NavLink to="/Theme3">Royal</NavLink>
         </li>
         <li>
           <NavLink to="/Favorites">Favorites</NavLink>
