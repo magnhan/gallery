@@ -4,17 +4,25 @@
   grid-row: 1fr;
   min-height: 100vh; /*stretches to fill the screen*/
   min-width: 100vw;
-  background-color: beige;
+  background-color: #EEF4D4;
 }
 .grid-container > div {
   text-align: center;
   font-size: 30px;
 }
-.Header {
-  border-bottom: solid grey;
+@font-face {
+  font-family: 'mango-salsa' ;
+  src: url('./fonts/Mango Salsa - Personal Use.ttf');
+  font-style: normal;
 }
-.Menu {
-  border-bottom: solid grey;
+
+.Header {
+  font-family: 'mango-salsa', "Roboto";
+  color: #1C2826;
+}
+
+.Footer {
+  background-color: #DAEFB3;
 }
 
 .DisplayArt {

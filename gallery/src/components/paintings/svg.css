@@ -1,5 +1,5 @@
 .SVG {
-  background-color: lightgrey;
+  background-color: #EA9E8D;
   height: 10em;
   width: 8em;
   padding: 0.1em;
@@ -21,6 +21,7 @@
   margin-block-end: 0.5em;
   margin-inline-start: 0.5em;
   margin-inline-end: 0.5em;
+  color: #1C2826;
 }
 
 /* On screens that are 350px or less */
