@@ -1,4 +1,5 @@
 import React from "react";
+import "../paintings/svg.css"
 
 export default function Favorites() {
   return (
