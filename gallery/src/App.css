@@ -16,13 +16,10 @@
   font-style: normal;
 }
 
-#Heading {
-  font-family: "mango-salsa", "Roboto";
-  color: #1c2826;
-}
-
-.Header a {
+#Heading a {
   text-decoration: none;
+  color: #1c2826;
+  font-family: "mango-salsa", "Roboto";
 }
 
 .Footer {
