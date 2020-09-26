@@ -1,11 +1,6 @@
 import React, {Component} from "react";
-import SVG1 from "./paintings/SVG1/SVG1";
-import SVG2 from "./paintings/SVG2/SVG2";
-import SVG3 from "./paintings/SVG3/SVG3";
-import SVG4 from "./paintings/SVG4/SVG4";
-import SVG5 from "./paintings/SVG5/SVG5";
-import SVG6 from "./paintings/SVG6/SVG6";
 import "./display-art.css";
+import Installation from "./paintings/Installation";
 
 class DisplayArt extends Component<{}, {poetryDB: Readonly<any>} > {
     constructor(props: any){
@@ -35,13 +30,13 @@ class DisplayArt extends Component<{}, {poetryDB: Readonly<any>} > {
     
     render(){
         return(
-        <div className="DisplayArt">
-          <SVG1 poem={this.generatePoetry()}/>
-          <SVG2 poem={this.generatePoetry()}/>
-          <SVG3 poem={this.generatePoetry()}/>
-          <SVG4 poem={this.generatePoetry()}/>
-          <SVG5 poem={this.generatePoetry()}/>
-          <SVG6 poem={this.generatePoetry()}/>
+        <div className="DisplayArt">  
+          <Installation image={1} poem={this.generatePoetry()} />
+          <Installation image={2} poem={this.generatePoetry()} />
+          <Installation image={3} poem={this.generatePoetry()} />
+          <Installation image={4} poem={this.generatePoetry()} />
+          <Installation image={5} poem={this.generatePoetry()} />
+          <Installation image={6} poem={this.generatePoetry()} />
         </div>
         )
     }

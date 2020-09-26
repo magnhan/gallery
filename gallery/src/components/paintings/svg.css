@@ -1,11 +1,11 @@
 .SVG {
-    background-color: #444;
-    font-size: 150%;
-    height: 5em;
-    width: 5em;
-    padding: 0.5em;
-    margin: 1em;
-    justify-self: center;
+  background-color: #444;
+  font-size: 150%;
+  height: 5em;
+  width: 5em;
+  padding: 0.5em;
+  margin: 1em;
+  justify-self: center;
 }
 
 .SVG_picture {
@@ -20,15 +20,15 @@
 
 /* On screens that are 350px or less */
 @media only screen and (max-width: 350px) {
-    .SVG {
-      height: 200px;
-      width: 200px;
-      justify-items: stretch;
-    }
-  
-    .SVG_picture {
-      height: 160px;
-      width: 200px;
-      justify-items: center;
-    }
+  .SVG {
+    height: 200px;
+    width: 200px;
+    justify-items: stretch;
   }
+
+  .SVG_picture {
+    height: 160px;
+    width: 200px;
+    justify-items: center;
+  }
+}
