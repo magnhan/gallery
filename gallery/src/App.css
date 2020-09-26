@@ -8,7 +8,7 @@
 }
 .grid-container > div {
   text-align: center;
-  font-size: 30px;
+  font-size: 2em;
 }
 @font-face {
   font-family: "mango-salsa";
@@ -27,6 +27,8 @@
 }
 .Header a {
   text-decoration: none;
+  color: #1c2826;
+  font-family: "mango-salsa", "Roboto";
 }
 .FavoritesButton {
   grid-column: 5/6;
