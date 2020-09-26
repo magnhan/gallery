@@ -4,10 +4,10 @@ import "./FavoritesButton.css";
 
 export default function FavoritesButton() {
   return (
-    <div>
+    <div className= "FavoritesButton">
       <NavLink to="/Favorites">
         <div className="click">
-          {" "}
+          {"Fav"}
           <span className="fa fa-star-o"></span>
         </div>
       </NavLink>

@@ -1,7 +1,7 @@
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-row: 1fr;
+  grid-template-columns: repeat(5,1fr);
+  grid-row: auto;
   min-height: 100vh; /*stretches to fill the screen*/
   min-width: 100vw;
   background-color: #eef4d4;
@@ -19,21 +19,61 @@
 #Heading {
   font-family: "mango-salsa", "Roboto";
   color: #1c2826;
+  margin-block-start: 0em;
 }
-
+.Header {
+  grid-column: 1/6;
+  grid-row: 2;
+}
 .Header a {
   text-decoration: none;
 }
-
-.Footer {
-  background-color: #daefb3;
+.FavoritesButton {
+  grid-column: 5/6;
+  grid-row: 1;
+  text-align: right;
 }
+.Menu {
+  grid-column: 1/6;
+  grid-row: 3;
+}
+.contentDiplayed {
+  grid-column: 1/6;
+  grid-row: 4;
+}
+.Footer {
+  grid-column: 1/6;
+  background-color: #daefb3;
+  grid-row: 5;
+}
+
 
 .DisplayArt {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  gap: 1em;
 }
+.Theme1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1em;
+}
+.Theme2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1em;
+}
+.Theme3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1em;
+}
+
+
 
 @media only screen and (max-width: 350px) {
   .Header {
