@@ -8,7 +8,7 @@ audio.src = require("../../../AudioClips/microphone.mp3");
 
 export default function SVG4(props: any) {
   return (
-    <div className="SVG SVG4">
+    <div>
       <svg className="SVG_picture" viewBox=" -40 -40 300 310" onClick={(e) => { togglePlay(audio)}}>
         <path
           id="microphone"

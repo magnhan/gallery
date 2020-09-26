@@ -16,17 +16,13 @@
 }
 
 .text {
-  font-size: small;
+  font-size: 0.5em;
   text-align: left;
   margin-block-start: 0.5em;
   margin-block-end: 0.5em;
   margin-inline-start: 0.5em;
   margin-inline-end: 0.5em;
   color: #1c2826;
-}
-
-.text{
-  font-size: x-large;
 }
 
 /* On screens that are 350px or less */

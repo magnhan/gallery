@@ -6,49 +6,50 @@ import SVG3 from "./SVG3/SVG3";
 import SVG4 from "./SVG4/SVG4";
 import SVG5 from "./SVG5/SVG5";
 import SVG6 from "./SVG6/SVG6";
+import "./svg.css";
 
 export default function Installation(props: any) {
     switch(props.image) {
         case 1:
             return (
-                <div>
+                <div className="SVG SVG1">
                     <SVG1/>
-                    {props.poem}
+                    <p className="text">{props.poem}</p>
                 </div>
             );
         case 2:
             return (
-                <div>
+                <div className="SVG SVG2">
                     <SVG2/>
-                    {props.poem}
+                    <p className="text">{props.poem}</p>
                 </div>
             );
         case 3:
             return (
-                <div>
+                <div className="SVG SVG3">
                     <SVG3/>
-                    {props.poem}
+                    <p className="text">{props.poem}</p>
                 </div>
             );
         case 4:
             return (
-                <div>
+                <div className="SVG SVG4">
                     <SVG4/>
-                    {props.poem}
+                    <p className="text">{props.poem}</p>
                 </div>
             );
         case 5:
             return (
-                <div>
+                <div className="SVG SVG5">
                     <SVG5/>
-                    {props.poem}
+                    <p className="text">{props.poem}</p>
                 </div>
                 );
         case 6:
             return (
-                <div>
+                <div className="SVG SVG6">
                     <SVG6/>
-                    {props.poem}
+                    <p className="text">{props.poem}</p>
                 </div>
             );
         default:

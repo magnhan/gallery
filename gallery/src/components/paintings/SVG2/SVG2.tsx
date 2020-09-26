@@ -8,7 +8,7 @@ audio.src = require("../../../AudioClips/doubleBass.mp3");
 
 export default function SVG2(props: any) {
   return (
-    <div className="SVG SVG2">
+    <div>
       <svg className="SVG_picture" id="base_paths" viewBox=" -40 -40 300 310" onClick={(e) => { togglePlay(audio)}}>
         <path
           id="bass-base"

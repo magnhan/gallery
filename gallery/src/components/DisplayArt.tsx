@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import "./display-art.css";
 import Installation from "./paintings/Installation";
 
 class DisplayArt extends Component<{}, {poetryDB: Readonly<any>} > {
