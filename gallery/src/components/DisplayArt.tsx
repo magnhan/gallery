@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import Installation from "./paintings/Installation";
 
+
 class DisplayArt extends Component<{}, {poetryDB: Readonly<any>} > {
     constructor(props: any){
       super(props);
@@ -10,7 +11,6 @@ class DisplayArt extends Component<{}, {poetryDB: Readonly<any>} > {
         poetryDB: []
       };
     }
-    
     //Fetches poetry from the online database
     componentDidMount() {
       fetch('https://poetrydb.org/author,title/Shakespeare;Sonnet')

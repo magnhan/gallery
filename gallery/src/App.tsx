@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import "./index.css";
 import { Route, HashRouter } from "react-router-dom";
@@ -11,14 +11,22 @@ import Theme2 from "./components/Theme2";
 import Theme3 from "./components/Theme3";
 import Favorites from "./components/Favorites/Favorites";
 import FavoritesButton from "./components/Favorites/FavoritesButton";
+import ThemeContex, {themes} from './components/ThemeContex';
+
 
 export default function App() {
+  const [theme, setTheme] = useState(themes.standard);
+  const toggleTheme = () => (theme === themes.standard?
+    setTheme(themes.tropical):setTheme(themes.standard)
+  );
+
   return (
+    <ThemeContex.Provider value = {theme}>
     <HashRouter>
       <div className="grid-container">
         <FavoritesButton />
         <Header />
-        <Menu />
+        <Menu changeTheme = {toggleTheme}/>
         <div className="contentDiplayed">
           <Route exact path="/" component={DisplayArt} />
           <Route path="/Theme1" component={Theme1} />
@@ -29,5 +37,7 @@ export default function App() {
         <Footer />
       </div>
     </HashRouter>
+    </ThemeContex.Provider>
+    
   );
 }
