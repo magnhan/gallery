@@ -3,3 +3,12 @@
   transform: scale(0.7);
 }
 
+.SaveButton{
+  fill: white;
+  border: 20p;
+  transform: scale(0.7);
+}
+
+.SaveButton:hover{
+  fill: #d64550;
+}
