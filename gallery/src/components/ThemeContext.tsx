@@ -5,7 +5,7 @@ export const themes = {
     tropical:{
         background: '#70D6FF',
         dark: 'black',
-        accent: 'red',
+        accent: '#0ffdc',
     },
     standard: {
         background: '#d64550',
