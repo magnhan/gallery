@@ -19,7 +19,7 @@
 
 #Heading {
   font-family: "mango-salsa", "Roboto";
-  color: #1c2826;
+  /*color: #1c2826;*/
 }
 .Header {
   grid-column: 2/10;
@@ -27,7 +27,7 @@
 }
 .Header a {
   text-decoration: none;
-  color: #1c2826;
+  /*color: #1c2826;*/
 }
 .FavoritesButton {
   grid-column: 10/11;
