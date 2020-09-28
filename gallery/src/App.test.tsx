@@ -11,11 +11,6 @@ test("Snapshottest Menu", () => {
   let tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 });
-test("Snapshottest Main", () => {
-  const component = renderer.create(<Main />);
-  let tree = component.toJSON();
-  expect(tree).toMatchSnapshot();
-});
 
 //smoke test for components
 test("Renders without crashing", () => {
