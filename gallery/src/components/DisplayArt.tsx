@@ -5,7 +5,6 @@ import Installation from "./paintings/Installation";
 class DisplayArt extends Component<{}, {poetryDB: Readonly<any>} > {
     constructor(props: any){
       super(props);
-      console.log(this.props);
       
       this.state = {
         poetryDB: []
@@ -26,16 +25,22 @@ class DisplayArt extends Component<{}, {poetryDB: Readonly<any>} > {
           poem.title))[Math.floor(Math.random() * (this.state.poetryDB.length - 1))]
         )
     }
+
+    showImage(imageNumber: number){
+      return(
+        <Installation image={imageNumber} poem={this.generatePoetry()} />
+      )
+    }
     
     render(){
         return(
         <div className="DisplayArt">  
-          <Installation image={1} poem={this.generatePoetry()} />
-          <Installation image={2} poem={this.generatePoetry()} />
-          <Installation image={3} poem={this.generatePoetry()} />
-          <Installation image={4} poem={this.generatePoetry()} />
-          <Installation image={5} poem={this.generatePoetry()} />
-          <Installation image={6} poem={this.generatePoetry()} />
+            {this.showImage(1)}
+            {this.showImage(2)}
+            {this.showImage(3)}
+            {this.showImage(4)}
+            {this.showImage(5)}
+            {this.showImage(6)}
         </div>
         )
     }

@@ -3,6 +3,7 @@ import React from "react";
 export default function SaveButton() {
   return (
     <div className= "SaveButton">
+      <button id="favBtn">
         <svg width="70px" height="70px">
           <path
             d="M 46.296296,51.906272 L 31.916351,42.474649 L 17.502712,51.8547 L
@@ -11,6 +12,7 @@ export default function SaveButton() {
                 41.829396,35.299492 L 46.296296,51.906272 z "
           />
         </svg>
+        </button>
     </div>
   );
 }

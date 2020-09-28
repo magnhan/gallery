@@ -5,6 +5,7 @@ import ThemeContext from "../ThemeContext";
 
 export default function Menu(props: any) {
   const {theme} = React.useContext(ThemeContext);
+   
   return (
     <div className="Menu" style={{backgroundColor: theme.menu}}>
       <ul className="Header_Menu">
@@ -14,8 +15,9 @@ export default function Menu(props: any) {
             <button 
             id="Tropical" 
             className="btn" 
-            onClick={tropicalThemeToggle} 
-            style={{backgroundColor: theme.menu}}>
+            onClick={tropicalThemeToggle}
+            style={{backgroundColor: theme.menu}}
+            >
               Tropical
             </button>
         )}

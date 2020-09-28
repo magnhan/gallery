@@ -12,3 +12,11 @@
 .SaveButton:hover{
   fill: #d64550;
 }
+
+#favBtn{
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0px;
+  appearance: none;
+}

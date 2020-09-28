@@ -1,11 +1,10 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import "./FavoritesButton.css";
 
 export default function FavoritesButton() {
   return (
     <div className= "FavoritesButton">
-      <NavLink to="/Favorites">
+      <button id ="favBtn">
         <svg id="favorites" width="70px" height="70px">
           <path
             d="M 46.296296,51.906272 L 31.916351,42.474649 L 17.502712,51.8547 L
@@ -14,7 +13,7 @@ export default function FavoritesButton() {
         41.829396,35.299492 L 46.296296,51.906272 z "
           />
         </svg>
-      </NavLink>
+      </button>
     </div>
   );
 }
