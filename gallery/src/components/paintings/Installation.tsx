@@ -19,7 +19,7 @@ export default function Installation(props: any) {
                     <SVG1/>
                     <div className="caption">
                         <p className="text">{props.poem}</p>
-                        <SaveButton/>
+                        <SaveButton image={props.image}/>
                     </div>
                 </div>
             );
@@ -29,7 +29,7 @@ export default function Installation(props: any) {
                     <SVG2/>
                     <div className="caption">
                         <p className="text">{props.poem}</p>
-                        <SaveButton/>
+                        <SaveButton image={props.image}/>
                     </div>
                 </div>
             );
@@ -39,7 +39,7 @@ export default function Installation(props: any) {
                     <SVG3/>
                     <div className="caption">
                         <p className="text">{props.poem}</p>
-                        <SaveButton/>
+                        <SaveButton image={props.image}/>
                     </div>
                 </div>
             );
@@ -49,7 +49,7 @@ export default function Installation(props: any) {
                     <SVG4/>
                     <div className="caption">
                         <p className="text">{props.poem}</p>
-                        <SaveButton/>
+                        <SaveButton image={props.image}/>
                     </div>
                 </div>
             );
@@ -59,7 +59,7 @@ export default function Installation(props: any) {
                     <SVG5/>
                     <div className="caption">
                         <p className="text">{props.poem}</p>
-                        <SaveButton/>
+                        <SaveButton image={props.image}/>
                     </div>
                 </div>
                 );
@@ -69,7 +69,7 @@ export default function Installation(props: any) {
                     <SVG6/>
                     <div className="caption">
                         <p className="text">{props.poem}</p>
-                        <SaveButton/>
+                        <SaveButton image={props.image}/>
                     </div>
                 </div>
             );

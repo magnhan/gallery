@@ -1,9 +1,30 @@
-import React from "react";
+import React, { useContext, useState } from "react";
+import ThemeContex from "../ThemeContext";
 
-export default function SaveButton() {
+export default function SaveButton(props: any) {
+  const {theme} = useContext(ThemeContex);
+  const [favorite, setFavorite] = useState((JSON.parse(sessionStorage.getItem("favorites") || "[]") as number[])
+  .some(x => x === props.image));
+  function saveFavorite(){
+    var savedImages: Array<number> = JSON.parse(sessionStorage.getItem("favorites") || "[]");
+    if(savedImages.some(x => x === props.image)){
+      savedImages.forEach((item, index) => {if(item===props.image) savedImages.splice(index,1);});
+    }
+    else{
+      savedImages.push(props.image);
+    }
+    savedImages.sort();
+    sessionStorage.setItem("favorites", JSON.stringify(savedImages));
+    setFavorite((JSON.parse(sessionStorage.getItem("favorites") || "[]") as number[])
+    .some(x => x === props.image))
+    console.log(savedImages);
+  }
+
   return (
     <div className= "SaveButton">
-      <button id="favBtn">
+      <button id="favBtn" onClick={saveFavorite}
+      style={{fill: favorite?theme.menu:theme.background}
+      }>
         <svg width="70px" height="70px">
           <path
             d="M 46.296296,51.906272 L 31.916351,42.474649 L 17.502712,51.8547 L
