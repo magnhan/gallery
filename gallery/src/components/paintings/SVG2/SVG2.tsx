@@ -4,7 +4,7 @@ import "./../svg.css";
 import { togglePlay } from "../../Music";
 
 let audio = new Audio();
-audio.src = require("../../../AudioClips/doubleBass.mp3");
+audio.src = require("../../AudioClips/doubleBass.mp3");
 
 export default function SVG2() {
   return (

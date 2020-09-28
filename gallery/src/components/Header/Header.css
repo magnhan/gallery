@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "mango-salsa";
+    src: url("../../fonts/MangoSalsa.ttf");
+    font-style: normal;
+  }
+  #Heading {
+    font-family: "mango-salsa", "Roboto";
+    margin-block-start: 0em;
+  }
+  .Header a {
+    text-decoration: none;
+    color: #1c2826;
+  }
+
+
+  @media only screen and (max-width: 350px) {
+    .Header {
+      font-size: 15px;
+    }
+  }
