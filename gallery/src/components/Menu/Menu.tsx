@@ -9,19 +9,18 @@ export default function Menu() {
     <div className="Menu" style={{ backgroundColor: theme.menu }}>
       <ul className="Header_Menu">
         <li>
-        {/*Toggles functions defined in App component to change theme globally*/}
-        <ThemeContex.Consumer>
-        {({theme, tropicalThemeToggle}) => (
-            <button 
-            id="Tropical" 
-            className="btn" 
-            onClick={tropicalThemeToggle}
-            style={{backgroundColor: theme.menu}}
-            >
-              Tropical
-            </button>
-        )}
-        </ThemeContex.Consumer>
+          <ThemeContex.Consumer>
+            {({ theme, tropicalThemeToggle }) => (
+              <button
+                id="Tropical"
+                className="btn"
+                onClick={tropicalThemeToggle}
+                style={{ backgroundColor: theme.menu }}
+              >
+                Tropical
+              </button>
+            )}
+          </ThemeContex.Consumer>
         </li>
         <li>
           <ThemeContex.Consumer>
