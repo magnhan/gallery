@@ -49,9 +49,7 @@
 
 .Footer {
   grid-column: 1/11;
-  background-color: #daefb3;
   grid-row: 5;
-  height: 2em;
 }
 
 
@@ -61,7 +59,6 @@
   justify-content: space-around;
   gap: 1em;
 }
-
 
 @media only screen and (max-width: 350px) {
   .Header {

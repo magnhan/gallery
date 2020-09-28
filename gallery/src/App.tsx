@@ -4,7 +4,7 @@ import "./index.css";
 import DisplayArt from "./components/DisplayArt";
 import Header from "./components/Header";
 import Menu from "./components/Menu/Menu";
-import Footer from "./components/Footer";
+import Footer from "./components/Footer/Footer";
 import FavoritesButton from "./components/Favorites/FavoritesButton";
 import ThemeContex, { themes } from "./components/ThemeContext";
 import { HashRouter } from "react-router-dom";
