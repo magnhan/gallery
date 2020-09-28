@@ -18,8 +18,8 @@ export default function Installation(props: any) {
                 <div className="SVG SVG1" style={{backgroundColor: theme.photo}}>
                     <SVG1/>
                     <div className="caption">
-                    <p className="text">{props.poem}</p>
-                    <SaveButton/>
+                        <p className="text">{props.poem}</p>
+                        <SaveButton/>
                     </div>
                 </div>
             );
@@ -28,8 +28,8 @@ export default function Installation(props: any) {
                 <div className="SVG SVG2" style={{backgroundColor: theme.photo}}>
                     <SVG2/>
                     <div className="caption">
-                    <p className="text">{props.poem}</p>
-                    <SaveButton/>
+                        <p className="text">{props.poem}</p>
+                        <SaveButton/>
                     </div>
                 </div>
             );
@@ -38,8 +38,8 @@ export default function Installation(props: any) {
                 <div className="SVG SVG3" style={{backgroundColor: theme.photo}}>
                     <SVG3/>
                     <div className="caption">
-                    <p className="text">{props.poem}</p>
-                    <SaveButton/>
+                        <p className="text">{props.poem}</p>
+                        <SaveButton/>
                     </div>
                 </div>
             );
@@ -48,8 +48,8 @@ export default function Installation(props: any) {
                 <div className="SVG SVG4" style={{backgroundColor: theme.photo}}>
                     <SVG4/>
                     <div className="caption">
-                    <p className="text">{props.poem}</p>
-                    <SaveButton/>
+                        <p className="text">{props.poem}</p>
+                        <SaveButton/>
                     </div>
                 </div>
             );
@@ -58,8 +58,8 @@ export default function Installation(props: any) {
                 <div className="SVG SVG5" style={{backgroundColor: theme.photo}}>
                     <SVG5/>
                     <div className="caption">
-                    <p className="text">{props.poem}</p>
-                    <SaveButton/>
+                        <p className="text">{props.poem}</p>
+                        <SaveButton/>
                     </div>
                 </div>
                 );
@@ -68,8 +68,8 @@ export default function Installation(props: any) {
                 <div className="SVG SVG6" style={{backgroundColor: theme.photo}}>
                     <SVG6/>
                     <div className="caption">
-                    <p className="text">{props.poem}</p>
-                    <SaveButton/>
+                        <p className="text">{props.poem}</p>
+                        <SaveButton/>
                     </div>
                 </div>
             );

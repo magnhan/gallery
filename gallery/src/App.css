@@ -1,9 +1,3 @@
-@font-face {
-  font-family: "mango-salsa";
-  src: url("./fonts/MangoSalsa.ttf");
-  font-style: normal;
-}
-
 .grid-container {
   display: grid;
   grid-template-columns: repeat(10,1fr);
@@ -16,18 +10,9 @@
   text-align: center;
   font-size: 2em;
 }
-
-#Heading {
-  font-family: "mango-salsa", "Roboto";
-  margin-block-start: 0em;
-}
 .Header {
   grid-column: 1/11;
   grid-row: 2;
-}
-.Header a {
-  text-decoration: none;
-  color: #1c2826;
 }
 .FavoritesButton {
   grid-column: 10/11;
@@ -58,7 +43,6 @@
 .Theme1 {
   justify-content: center;
 }
-
 
 
 @media only screen and (max-width: 350px) {
