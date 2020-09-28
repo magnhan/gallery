@@ -20,7 +20,7 @@ Gruppen har brukt både sessionStorage og localStorage fra HTML Web Storage. Vi 
 Løsningen implementerer responsivt design og tilpasser seg ulike skjermstørrelser. Når skjermen blir liten nok (smal mobil) endres bildene til en mindre størrelse ved hjelp av media queries og viewbox. Siden er fungerende når du også roterer skjermen. Gruppen har laget all CSS fra bunnen, og laget passende mapper for å binde CSS- og Typescript-filene sammen.
  
 ##Testing
-Gruppen startet med å laste ned react-test-renderer fra npm. La til snapshot test, der youtube-videoen som er referert til i kildene la grunnlag for vår kode. Vi la også til en smoke test for å sjekke at det App rendrer uten å krasje.
+Gruppen startet med å laste ned react-test-renderer fra npm. La til snapshot test, der youtube-videoen som er referert til i kildene la grunnlag for vår kode. Vi la også til en smoke test for å sjekke at App rendrer uten å krasje.
  
 ##Bruk av git, koding
 Koden i prosjektet er fornuftig strukturert og kommentert der gruppen har ment det er nødvendig. Gruppen brukte GitHub desktop til versjonshåndtering. Vi har brukt issues og issue boards på GitLab for å holde oversikt over hva som må gjøres, slik at gruppens fremdrift er tydelig. 
