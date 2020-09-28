@@ -1,0 +1,3 @@
+tasks:
+  - init: cd gallery/ && npm install && npm run build
+    command: npm run start
