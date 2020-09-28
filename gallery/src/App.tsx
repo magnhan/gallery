@@ -7,7 +7,9 @@ import Menu from "./components/Menu/Menu";
 import Footer from "./components/Footer";
 import FavoritesButton from "./components/Favorites/FavoritesButton";
 import ThemeContex, {themes} from './components/ThemeContext';
-import { HashRouter } from "react-router-dom";
+import { HashRouter, Route } from "react-router-dom";
+import Favorites from "./components/Favorites/Favorites";
+import Main from "./components/Main";
 
 
 export default function App() {
@@ -30,7 +32,8 @@ export default function App() {
         <Header />
         <Menu/>
         <div className="contentDiplayed">
-        <DisplayArt/>
+        <Route exact path="/" component={Main} />
+        <Route path="/Favorites" component={Favorites} />
         </div>
         <Footer />
       </div>

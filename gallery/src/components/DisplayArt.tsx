@@ -2,12 +2,13 @@ import React, {Component} from "react";
 import Installation from "./paintings/Installation";
 
 
-class DisplayArt extends Component<{}, {poetryDB: Readonly<any>} > {
+class DisplayArt extends React.Component<{page: string},{poetryDB: Readonly<any>} > {
     constructor(props: any){
       super(props);
       
       this.state = {
-        poetryDB: []
+        poetryDB: [],
+
       };
     }
     //Fetches poetry from the online database
@@ -31,8 +32,16 @@ class DisplayArt extends Component<{}, {poetryDB: Readonly<any>} > {
         <Installation image={imageNumber} poem={this.generatePoetry()} />
       )
     }
+
+
     
     render(){
+      const elements: number[] = JSON.parse(localStorage.getItem("favorites") || "[]");
+      const items = []
+      for (const i of elements){
+        items.push(this.showImage(i))
+      }
+      if(this.props.page === "all"){
         return(
         <div className="DisplayArt">  
             {this.showImage(1)}
@@ -43,6 +52,14 @@ class DisplayArt extends Component<{}, {poetryDB: Readonly<any>} > {
             {this.showImage(6)}
         </div>
         )
+      }
+      else{
+        return(
+          <div className="DisplayArt">
+            {items}
+          </div>
+        )
+      }
     }
 }
 
