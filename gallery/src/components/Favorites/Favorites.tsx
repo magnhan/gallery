@@ -1,6 +1,7 @@
 import React from "react";
 import "../paintings/svg.css";
 import DisplayArt from "./../DisplayArt";
+import "../../App.css"
 
 export default function Favorites() {
   return (
