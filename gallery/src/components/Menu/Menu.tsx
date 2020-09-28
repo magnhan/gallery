@@ -1,33 +1,52 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import ThemeContex from "../ThemeContext";
 import "./Menu.css";
+import ThemeContext from "../ThemeContext";
 
-export default function Menu() {
+export default function Menu(props: any) {
+  const {theme} = React.useContext(ThemeContext);
   return (
-    <div className="Menu">
+    <div className="Menu" style={{backgroundColor: theme.menu}}>
       <ul className="Header_Menu">
         <li>
-          <NavLink to="/Theme1">
-            <button id="Tropical" className="btn">
+        <ThemeContex.Consumer>
+        {({theme, tropicalThemeToggle}) => (
+            <button 
+            id="Tropical" 
+            className="btn" 
+            onClick={tropicalThemeToggle} 
+            style={{backgroundColor: theme.menu}}>
               Tropical
             </button>
-          </NavLink>
+        )}
+        </ThemeContex.Consumer>
         </li>
         <li>
-          <NavLink to="/Theme2">
-            <button id="Disco" className="btn">
+        <ThemeContex.Consumer>
+        {({theme, discoThemeToggle}) => (
+            <button id="Disco" 
+            className="btn" 
+            onClick={discoThemeToggle}
+            style={{backgroundColor: theme.menu}}>
               Disco
             </button>
-          </NavLink>
+            )}
+          </ThemeContex.Consumer>
         </li>
         <li>
-          <NavLink to="/Theme3">
-            <button id="Royal" className="btn">
+        <ThemeContex.Consumer>
+        {({theme, royalThemeToggle}) => (
+            <button id="Royal" 
+            className="btn"
+            onClick={royalThemeToggle}
+            style={{backgroundColor: theme.menu}}>
               Royal
             </button>
-          </NavLink>
+            )}
+            </ThemeContex.Consumer>
         </li>
       </ul>
     </div>
+    
   );
 }

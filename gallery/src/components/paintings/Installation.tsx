@@ -8,12 +8,14 @@ import SVG5 from "./SVG5/SVG5";
 import SVG6 from "./SVG6/SVG6";
 import "./svg.css";
 import SaveButton from "../Favorites/SaveButton";
+import ThemeContext from '../ThemeContext';
 
 export default function Installation(props: any) {
+    const {theme} = React.useContext(ThemeContext);
     switch(props.image) {
         case 1:
             return (
-                <div className="SVG SVG1">
+                <div className="SVG SVG1" style={{backgroundColor: theme.photo}}>
                     <SVG1/>
                     <div className="caption">
                     <p className="text">{props.poem}</p>
@@ -23,7 +25,7 @@ export default function Installation(props: any) {
             );
         case 2:
             return (
-                <div className="SVG SVG2">
+                <div className="SVG SVG2" style={{backgroundColor: theme.photo}}>
                     <SVG2/>
                     <div className="caption">
                     <p className="text">{props.poem}</p>
@@ -33,7 +35,7 @@ export default function Installation(props: any) {
             );
         case 3:
             return (
-                <div className="SVG SVG3">
+                <div className="SVG SVG3" style={{backgroundColor: theme.photo}}>
                     <SVG3/>
                     <div className="caption">
                     <p className="text">{props.poem}</p>
@@ -43,7 +45,7 @@ export default function Installation(props: any) {
             );
         case 4:
             return (
-                <div className="SVG SVG4">
+                <div className="SVG SVG4" style={{backgroundColor: theme.photo}}>
                     <SVG4/>
                     <div className="caption">
                     <p className="text">{props.poem}</p>
@@ -53,7 +55,7 @@ export default function Installation(props: any) {
             );
         case 5:
             return (
-                <div className="SVG SVG5">
+                <div className="SVG SVG5" style={{backgroundColor: theme.photo}}>
                     <SVG5/>
                     <div className="caption">
                     <p className="text">{props.poem}</p>
@@ -63,7 +65,7 @@ export default function Installation(props: any) {
                 );
         case 6:
             return (
-                <div className="SVG SVG6">
+                <div className="SVG SVG6" style={{backgroundColor: theme.photo}}>
                     <SVG6/>
                     <div className="caption">
                     <p className="text">{props.poem}</p>

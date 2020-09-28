@@ -19,11 +19,11 @@
 
 #Heading {
   font-family: "mango-salsa", "Roboto";
-  color: #1c2826;
+  margin-block-start: 0em;
 }
 .Header {
-  grid-column: 2/10;
-  grid-row: 1;
+  grid-column: 1/11;
+  grid-row: 2;
 }
 .Header a {
   text-decoration: none;
@@ -35,17 +35,16 @@
 }
 .Menu {
   grid-column: 1/11;
-  grid-row: 1.2;
+  grid-row: 3.2;
 }
 .contentDiplayed {
   grid-column: 1/11;
-  grid-row: 3;
+  grid-row: 4;
 }
 .Footer {
   grid-column: 1/11;
   background-color: #daefb3;
-  grid-row: 4;
-  position: relative;
+  grid-row: 5;
   height: 2em;
 }
 
@@ -56,11 +55,9 @@
   justify-content: space-around;
   gap: 1em;
 }
-
 .Theme1 {
   justify-content: center;
 }
-
 
 
 
