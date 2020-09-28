@@ -1,5 +1,4 @@
 import React from "react";
-
 import SVG1 from "./SVG1/SVG1";
 import SVG2 from "./SVG2/SVG2";
 import SVG3 from "./SVG3/SVG3";
@@ -12,6 +11,7 @@ import ThemeContext from '../ThemeContext';
 
 export default function Installation(props: any) {
     const {theme} = React.useContext(ThemeContext);
+    //Renders an installation based on the image prop passed
     switch(props.image) {
         case 1:
             return (

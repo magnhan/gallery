@@ -27,36 +27,36 @@ class DisplayArt extends React.Component<{page: string},{poetryDB: Readonly<any>
         )
     }
 
+    //Creates an installation with a given image
     showImage(imageNumber: number){
       return(
         <Installation image={imageNumber} poem={this.generatePoetry()} />
       )
     }
 
-
-    
-    render(){
-      const elements: number[] = JSON.parse(localStorage.getItem("favorites") || "[]");
+    //Creates all installations in elements
+    getRenderedImages(elements: number[]){
       const items = []
       for (const i of elements){
-        items.push(this.showImage(i))
+        items.push(this.showImage(i));
       }
+      return items;
+    }
+
+    render(){
+      //Renders all installations
       if(this.props.page === "all"){
         return(
         <div className="DisplayArt">  
-            {this.showImage(1)}
-            {this.showImage(2)}
-            {this.showImage(3)}
-            {this.showImage(4)}
-            {this.showImage(5)}
-            {this.showImage(6)}
+            {this.getRenderedImages([1,2,3,4,5,6])}
         </div>
         )
       }
-      else{
+      //Renders locally stored installations with key "favorites"
+      else if(this.props.page === "favorites"){
         return(
           <div className="DisplayArt">
-            {items}
+            {this.getRenderedImages(JSON.parse(localStorage.getItem("favorites") || "[]"))}
           </div>
         )
       }

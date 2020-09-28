@@ -12,7 +12,9 @@ import Main from "./components/Main";
 
 
 export default function App() {
+  //State hooks for context theme
   const [theme, setTheme] = useState(themes.standard);
+  //Toggle functions to change between the three themes
   const tropicalThemeToggle = () => (theme !== themes.tropical?
     setTheme(themes.tropical):setTheme(themes.standard)
   );
@@ -24,12 +26,14 @@ export default function App() {
   );
 
   return (
+    //Passes toggles and theme to all components down the hierarchy (all components except index)
     <ThemeContex.Provider value= {{theme, tropicalThemeToggle, discoThemeToggle, royalThemeToggle}}>
     <HashRouter>
       <div className="grid-container" style={{backgroundColor: theme.background}}>
         <FavoritesButton />
         <Header />
         <Menu/>
+        {/*Routes to the two different displays of installations*/}
         <div className="contentDiplayed">
         <Route exact path="/" component={Main} />
         <Route path="/Favorites" component={Favorites} />
