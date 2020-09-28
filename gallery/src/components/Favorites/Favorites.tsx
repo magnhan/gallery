@@ -1,10 +1,13 @@
 import React from "react";
-import "../paintings/svg.css"
+import "../paintings/svg.css";
+import DisplayArt from "./../DisplayArt";
+import "../../App.css"
 
 export default function Favorites() {
   return (
     <div className="Favorites">
-      <p>Here are your favorites: </p>
+      <p id="pageHeader"> Locally stored images</p>
+      <DisplayArt page={"favorites"} />
     </div>
   );
 }

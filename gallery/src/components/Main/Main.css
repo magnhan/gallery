@@ -1,0 +1,13 @@
+#SaveOnMain {
+  background-color: #ea9e8d;
+  border: none;
+  margin-bottom: 2em;
+  padding: 1em;
+  outline: none;
+  border-radius: 2em;
+}
+
+#SaveOnMain:hover {
+  cursor: pointer;
+  background-color: #dd767e;
+}

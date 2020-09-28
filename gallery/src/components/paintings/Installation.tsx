@@ -21,42 +21,42 @@ export default function Installation(props: installationProps) {
       return (
         <div className="SVG" style={{ backgroundColor: theme.photo }}>
           <SVG1 />
-          <Poem poems= {props.poem}/>
+          <Poem poems={props.poem} />
         </div>
       );
     case 2:
       return (
         <div className="SVG" style={{ backgroundColor: theme.photo }}>
           <SVG2 />
-          <Poem poems= {props.poem}/>
+          <Poem poems={props.poem} />
         </div>
       );
     case 3:
       return (
         <div className="SVG" style={{ backgroundColor: theme.photo }}>
           <SVG3 />
-          <Poem poems= {props.poem}/>
+          <Poem poems={props.poem} />
         </div>
       );
     case 4:
       return (
         <div className="SVG" style={{ backgroundColor: theme.photo }}>
           <SVG4 />
-          <Poem poems= {props.poem}/>
+          <Poem poems={props.poem} />
         </div>
       );
     case 5:
       return (
         <div className="SVG" style={{ backgroundColor: theme.photo }}>
           <SVG5 />
-          <Poem poems= {props.poem}/>
+          <Poem poems={props.poem} />
         </div>
       );
     case 6:
       return (
         <div className="SVG" style={{ backgroundColor: theme.photo }}>
           <SVG6 />
-          <Poem poems= {props.poem}/>
+          <Poem poems={props.poem} />
         </div>
       );
     default:
