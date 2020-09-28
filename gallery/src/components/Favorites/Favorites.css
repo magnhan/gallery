@@ -1,0 +1,32 @@
+#favorites {
+  fill: #d64550;
+  transform: scale(0.7);
+}
+
+.SaveButton {
+  fill: white;
+  border: 20p;
+  transform: scale(0.7);
+}
+
+.SaveButton:hover {
+  fill: #d64550;
+}
+
+#favBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0px;
+  appearance: none;
+  outline: none;
+}
+
+#pageHeader {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.Favorites {
+  justify-content: center;
+}

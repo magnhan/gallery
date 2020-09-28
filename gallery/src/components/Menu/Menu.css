@@ -1,6 +1,5 @@
 .Menu {
   background-color: #d64550;
-  /* height: 3em; */
 }
 
 .Header_Menu {
@@ -61,6 +60,7 @@
   font-weight: bold;
   border: none;
   height: 2em;
+  outline: none;
 }
 
 .btn:hover {
