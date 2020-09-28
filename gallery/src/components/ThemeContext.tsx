@@ -3,25 +3,28 @@ import '../App.css'
 
 export const themes = {
     tropical:{
-        background: '#70D6FF',
-        dark: 'black',
-        accent: '#0ffdc',
+        menu: '#2ace82',
+        footer: '#32e7c8',
+        photo: '#a7e351',
+        background: '#ffd670',
     },
     standard: {
-        background: '#d64550',
-        dark: '#1c2826',
-        accent: 'blue',
-    }, 
+        menu: '#d64550',
+        footer: '#daefb3',
+        photo: '#ea9e8d',
+        background: '#eef4d4',
+    },
     disco:{
-        background: 'green',
-        dark: 'gray',
-        accent: 'orange',
-
+        menu: '#7b1daf',
+        footer: '#d4ff47',
+        photo: '#ff2fb9',
+        background: '#C0C0C0',
     },
     royal:{
-        background: '#7006FF',
-        dark: 'light-gray',
-        accent: 'yellow'
+        menu: '#9b1c31',
+        footer: '#FCD882',
+        photo: '#000242',
+        background: '#FFEEA3'
     },
 };
 

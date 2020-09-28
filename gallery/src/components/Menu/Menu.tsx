@@ -1,13 +1,12 @@
-import React, { useContext } from "react";
+import React from "react";
 import ThemeContex from "../ThemeContext";
 import "./Menu.css";
+import ThemeContext from "../ThemeContext";
 
 export default function Menu(props: any) {
-//const theme = useContext(ThemeContex);
-
+  const {theme} = React.useContext(ThemeContext);
   return (
-    
-    <div className="Menu">
+    <div className="Menu" style={{backgroundColor: theme.menu}}>
       <ul className="Header_Menu">
         <li>
         <ThemeContex.Consumer>
@@ -16,11 +15,11 @@ export default function Menu(props: any) {
             id="Tropical" 
             className="btn" 
             onClick={tropicalThemeToggle} 
-            style={{backgroundColor: theme.background}}>
+            style={{backgroundColor: theme.menu}}>
               Tropical
             </button>
         )}
-            </ThemeContex.Consumer>
+        </ThemeContex.Consumer>
         </li>
         <li>
         <ThemeContex.Consumer>
@@ -28,11 +27,11 @@ export default function Menu(props: any) {
             <button id="Disco" 
             className="btn" 
             onClick={discoThemeToggle}
-            style={{backgroundColor: theme.background}}>
+            style={{backgroundColor: theme.menu}}>
               Disco
             </button>
             )}
-            </ThemeContex.Consumer>
+          </ThemeContex.Consumer>
         </li>
         <li>
         <ThemeContex.Consumer>
@@ -40,7 +39,7 @@ export default function Menu(props: any) {
             <button id="Royal" 
             className="btn"
             onClick={royalThemeToggle}
-            style={{backgroundColor: theme.background}}>
+            style={{backgroundColor: theme.menu}}>
               Royal
             </button>
             )}
