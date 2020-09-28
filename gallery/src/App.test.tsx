@@ -1,9 +1,18 @@
-import React from 'react';
-import { render } from '@testing-library/react';
-import App from './App';
+import React from "react";
+import App from "./App";
+import FavoritesButton from "./components/Favorites/FavoritesButton";
+import ReactDOM from "react-dom";
+import renderer from "react-test-renderer";
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+//snapshot test for favorite button
+test("First snapshottest", () => {
+  const component = renderer.create(<FavoritesButton />);
+  let tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+//smoke test for components
+test("Renders without crashing", () => {
+  const smokeTest = document.createElement("smokeTest");
+  ReactDOM.render(<App />, smokeTest);
 });
