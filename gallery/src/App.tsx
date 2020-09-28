@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
 import "./index.css";
-import DisplayArt from "./components/DisplayArt";
 import Header from "./components/Header/Header";
 import Menu from "./components/Menu/Menu";
 import Footer from "./components/Footer";

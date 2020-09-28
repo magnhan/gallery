@@ -25,6 +25,7 @@
 .contentDiplayed {
   grid-column: 1/11;
   grid-row: 4;
+  min-height: 400px;
 }
 .Footer {
   grid-column: 1/11;
