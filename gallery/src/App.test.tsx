@@ -3,10 +3,17 @@ import App from "./App";
 import FavoritesButton from "./components/Favorites/FavoritesButton";
 import ReactDOM from "react-dom";
 import renderer from "react-test-renderer";
+import Menu from "./components/Menu/Menu";
 
-//snapshot test for favorite button
-test("First snapshottest", () => {
+//snapshot tester
+test("Snapshottest FavoriteButtton", () => {
   const component = renderer.create(<FavoritesButton />);
+  let tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+test("Snapshottest Menu", () => {
+  const component = renderer.create(<Menu />);
   let tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 });

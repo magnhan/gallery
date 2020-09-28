@@ -1,15 +1,21 @@
 import React from "react";
 import "./SVG4.css";
 import "./../svg.css";
-import {togglePlay} from "../../Music";
+import { togglePlay } from "../../Music";
 
 let audio = new Audio();
-audio.src = require("../../../AudioClips/microphone.mp3");
+audio.src = require("../../AudioClips/microphone.mp3");
 
-export default function SVG4(props: any) {
+export default function SVG4() {
   return (
     <div>
-      <svg className="SVG_picture" viewBox=" -40 -40 300 310" onClick={(e) => { togglePlay(audio)}}>
+      <svg
+        className="SVG_picture"
+        viewBox=" -40 -40 300 310"
+        onClick={(e) => {
+          togglePlay(audio);
+        }}
+      >
         <path
           id="microphone"
           d="M125.21,291s36.4-24.694,23.007-28.266-58.836-12.3-16.733-42.921c-2.154-7.4-3.7-16.4,72.16-93.172C202.889,110.06,212.332,89.495,239.2,90s33.627,41.241,19.871,52.344-20.13,11.057-28.237,10.468c-6.275,6.745-60.656,55.485-60.656,55.485-22.892,17.416-26.6,19.388-35.557,14.656-5.6,2.906-27.178,20.411-11.5,26.172s40.449,9.182,29.282,21.984S125.21,291,125.21,291Z"

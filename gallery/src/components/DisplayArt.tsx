@@ -30,38 +30,31 @@ class DisplayArt extends React.Component<
     )[Math.floor(Math.random() * (this.state.poetryDB.length - 1))];
   }
 
-  //Creates an installation with a given image
-  showImage(imageNumber: number){
-    return(
-      <Installation image={imageNumber} poem={this.generatePoetry()} />
-    )
+  showImage(imageNumber: number) {
+    return <Installation image={imageNumber} poem={this.generatePoetry()} />;
   }
 
-  //Creates all installations in elements
-  getRenderedImages(elements: number[]){
-    const items = []
-    for (const i of elements){
+  render() {
+    const elements: number[] = JSON.parse(
+      localStorage.getItem("favorites") || "[]"
+    );
+    const items = [];
+    for (const i of elements) {
       items.push(this.showImage(i));
     }
-    return items;
-  }   
-
-  render(){
-    //Renders all installations
-    if(this.props.page === "all"){
-      return(
-      <div className="DisplayArt">  
-          {this.getRenderedImages([1,2,3,4,5,6])}
-      </div>
-      )
-    }
-    //Renders locally stored installations with key "favorites"
-    else if(this.props.page === "favorites"){
-      return(
+    if (this.props.page === "all") {
+      return (
         <div className="DisplayArt">
-          {this.getRenderedImages(JSON.parse(localStorage.getItem("favorites") || "[]"))}
+          {this.showImage(1)}
+          {this.showImage(2)}
+          {this.showImage(3)}
+          {this.showImage(4)}
+          {this.showImage(5)}
+          {this.showImage(6)}
         </div>
-      )
+      );
+    } else {
+      return <div className="DisplayArt">{items}</div>;
     }
   }
 }

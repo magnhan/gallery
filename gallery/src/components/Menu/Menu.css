@@ -1,20 +1,32 @@
+@font-face {
+  font-family: "tropical";
+  src: url("../../fonts/Tropical.ttf");
+  font-style: normal;
+}
+@font-face {
+  font-family: "disco";
+  src: url("../../fonts/DiscoDiva.ttf");
+  font-style: normal;
+}
+@font-face {
+  font-family: "royal";
+  src: url("../../fonts/RoyalQueen.ttf");
+  font-style: normal;
+}
+
 .Menu {
   background-color: #d64550;
 }
-
 .Header_Menu {
   margin-block-start: 0.5em;
   margin-block-end: 0.5em;
   padding-inline-start: 0em;
 }
-
 .Header_Menu > li {
   display: inline;
   list-style-type: none;
-  margin: 1em;
   font-size: smaller;
 }
-
 .Header_Menu li a {
   color: #eef4d4;
   font-weight: bold;
@@ -22,36 +34,20 @@
   display: inline-block;
 }
 
-@font-face {
-  font-family: 'tropical' ;
-  src: url('../../fonts/Tropical.ttf');
-  font-style: normal;
-}
-@font-face {
-  font-family: 'disco' ;
-  src: url('../../fonts/DiscoDiva.ttf');
-  font-style: normal;
-}
-@font-face {
-  font-family: 'royal' ;
-  src: url('../../fonts/RoyalQueen.ttf');
-  font-style: normal;
-}
-
 #Tropical {
-  font-family: 'tropical', "Roboto";
+  font-family: "tropical", "Roboto";
 }
 #Disco {
-  font-family: 'disco', "Roboto";
+  font-family: "disco", "Roboto";
 }
 #Royal {
-  font-family: 'royal', "Roboto";
+  font-family: "royal", "Roboto";
 }
 
-.btn{
-  color: #EEF4D4;
-  background-color: #D64550;
-  padding: 15px 32px;
+.btn {
+  color: #eef4d4;
+  background-color: #d64550;
+  padding: 0px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
