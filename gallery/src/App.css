@@ -12,6 +12,7 @@
   min-width: 100vw;
   background-color: #eef4d4;
 }
+
 .grid-container > div {
   text-align: center;
   font-size: 2em;
@@ -21,6 +22,7 @@
   font-family: "mango-salsa", "Roboto";
   margin-block-start: 0em;
 }
+
 .Header {
   grid-column: 1/11;
   grid-row: 2;
@@ -29,18 +31,22 @@
   text-decoration: none;
   color: #1c2826;
 }
+
 .FavoritesButton {
   grid-column: 10/11;
   grid-row: 1;
 }
+
 .Menu {
   grid-column: 1/11;
   grid-row: 3.2;
 }
+
 .contentDiplayed {
   grid-column: 1/11;
   grid-row: 4;
 }
+
 .Footer {
   grid-column: 1/11;
   background-color: #daefb3;
@@ -49,16 +55,12 @@
 }
 
 
-.DisplayArt, .Theme1, .Theme2, .Theme3{
+.DisplayArt{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 1em;
 }
-.Theme1 {
-  justify-content: center;
-}
-
 
 
 @media only screen and (max-width: 350px) {
