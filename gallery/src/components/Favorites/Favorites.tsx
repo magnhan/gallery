@@ -4,14 +4,10 @@ import DisplayArt from "./../DisplayArt";
 import "../../App.css"
 
 export default function Favorites() {
-  function savePermanently(){
-    localStorage.setItem("favorites", sessionStorage.getItem("favorites") || "[]")
-    console.log(localStorage.getItem("favorites"));
-  }
   return (
     <div className="Favorites">
-      <p onClick={savePermanently}>Click here to save your favorites for next time</p>
-      <DisplayArt page={"favorites"}/>
+      <p id="pageHeader"> Locally stored images</p>
+      <DisplayArt page={"favorites"} />
     </div>
   );
 }

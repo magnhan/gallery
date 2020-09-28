@@ -5,11 +5,10 @@ import Header from "./components/Header/Header";
 import Menu from "./components/Menu/Menu";
 import Footer from "./components/Footer";
 import FavoritesButton from "./components/Favorites/FavoritesButton";
-import ThemeContex, {themes} from './components/ThemeContext';
+import ThemeContex, { themes } from "./components/ThemeContext";
 import { HashRouter, Route } from "react-router-dom";
 import Favorites from "./components/Favorites/Favorites";
-import Main from "./components/Main";
-
+import Main from "./components/Main/Main";
 
 export default function App() {
   //State hooks for context theme
@@ -38,10 +37,8 @@ export default function App() {
         <Route exact path="/" component={Main} />
         <Route path="/Favorites" component={Favorites} />
         </div>
-        <Footer />
-      </div>
+        </div>
       </HashRouter>
     </ThemeContex.Provider>
-    
   );
 }
