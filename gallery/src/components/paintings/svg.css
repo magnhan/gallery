@@ -1,6 +1,6 @@
 .SVG {
   background-color: #ea9e8d;
-  height: 10em;
+  height: 10.5em;
   width: 8em;
   padding: 0.1em;
   margin: 1.1em;
@@ -9,16 +9,18 @@
 }
 
 .SVG_picture {
-  /* height: 8em;
-  width: 8em; */
   background-color: white;
   cursor: pointer;
+}
+.caption {
+  display: grid;
+  grid-template-columns: auto 55px;
 }
 
 .text {
   font-size: 0.5em;
   text-align: left;
-  margin-block-start: 0.3em;
+  margin-block-start: 0.2em;
   margin-block-end: 0.5em;
   margin-inline-start: 0.5em;
   margin-inline-end: 0.5em;
@@ -28,7 +30,7 @@
 /* On screens that are 350px or less */
 @media only screen and (max-width: 350px) {
   .SVG {
-    height: 7em;
+    height: 9.5em;
     width: 5.6em;
   }
 }

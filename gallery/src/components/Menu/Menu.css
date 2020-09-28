@@ -1,16 +1,16 @@
 @font-face {
-  font-family: 'tropical' ;
-  src: url('../../fonts/Tropical.ttf');
+  font-family: "tropical";
+  src: url("../../fonts/Tropical.ttf");
   font-style: normal;
 }
 @font-face {
-  font-family: 'disco' ;
-  src: url('../../fonts/DiscoDiva.ttf');
+  font-family: "disco";
+  src: url("../../fonts/DiscoDiva.ttf");
   font-style: normal;
 }
 @font-face {
-  font-family: 'royal' ;
-  src: url('../../fonts/RoyalQueen.ttf');
+  font-family: "royal";
+  src: url("../../fonts/RoyalQueen.ttf");
   font-style: normal;
 }
 
@@ -35,18 +35,18 @@
 }
 
 #Tropical {
-  font-family: 'tropical', "Roboto";
+  font-family: "tropical", "Roboto";
 }
 #Disco {
-  font-family: 'disco', "Roboto";
+  font-family: "disco", "Roboto";
 }
 #Royal {
-  font-family: 'royal', "Roboto";
+  font-family: "royal", "Roboto";
 }
 
-.btn{
-  color: #EEF4D4;
-  background-color: #D64550;
+.btn {
+  color: #eef4d4;
+  background-color: #d64550;
   padding: 0px 32px;
   text-align: center;
   text-decoration: none;
@@ -55,7 +55,7 @@
   cursor: pointer;
   font-weight: bold;
   border: none;
-  height: 100%;
+  height: 2em;
   outline: none;
 }
 
