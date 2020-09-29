@@ -1,3 +1,5 @@
+Laget av Aleksandra Grødem, Anchana Balasingham og Magnus Hanesand
+
 ##Bruk av siden 
 På vår nettside er det mulig å endre tema på siden, lagre installasjoner og hente de lagrede installasjonene frem igjen. De ulike temaene er tropical, disco og royal. Når du trykker på favoritt-ikonet ved bildene og deretter trykker på "click here to save your favorites for next time", kan du finne bildene under favoritt-ikonet øverst til høyre på siden. For å spille av lyden, trykk på hver installasjon.
  
